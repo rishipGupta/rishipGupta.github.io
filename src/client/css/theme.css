@@ -1,3 +1,12 @@
+/* 
+Use nexa-light and nexa-bold as font-family for every headings,p and other text items. Don't use other font-family
+Don't give paddings to the headings in theme. Any place where you use padding what is the necessity of padding bottom?
+don't specify display in theme
+No need to use font-weight
+for image height and width should be 100%
+section for mobile and tab view is missing. No need to specify div if you are specifying section
+ */
+
 html,
 body {
   box-sizing: border-box;
@@ -5,12 +14,12 @@ body {
 
 @font-face {
   font-family: "Nexa-Bold";
-  src: url("../fonts/Nexa-Bold.otf");
+  src: url("../assets/fonts/Nexa-Bold.otf");
 }
 
 @font-face {
   font-family: "Nexa-Light";
-  src: url("../fonts/Nexa-Light.otf");
+  src: url("../assets/fonts/Nexa-Bold.otf");
 }
 
 :root {
@@ -28,22 +37,13 @@ body {
 button {
   border: 0.06rem solid var(--dark-primary-blue);
   padding: 0.6rem;
-}
-
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-nav {
-  display: flex;
+  font-family: var(--light-primary-font);
 }
 
 .dark-btn {
   background-color: var(--dark-primary-blue);
   color: var(--dark-btn-textcolor);
+  font-family: var(--light-primary-font);
   border: 0.06rem solid var(--dark-primary-blue);
   padding: 0.6rem;
 }
@@ -53,32 +53,14 @@ nav {
   color: var(--white-color);
   border: 0.06rem solid var(--light-primary-blue);
   padding: 0.6rem;
-}
-
-.dark-btn-block {
-  background-color: var(--dark-primary-blue);
-  color: var(--dark-btn-textcolor);
-  border: 0.06rem solid var(--dark-primary-blue);
-  padding: 0.6rem;
-  display: block;
-}
-
-.light-btn-block {
-  background-color: var(--light-primary-blue);
-  color: var(--white-color);
-  border: 0.06rem solid var(--light-primary-blue);
-  padding: 0.6rem;
-  display: block;
+  font-family: var(--light-primary-font);  
 }
 
 h1 {
   font-family: var(--bold-primary-font);
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -86,10 +68,7 @@ h2 {
   font-family: var(--bold-primary-font);
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2rem;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -97,10 +76,7 @@ h3 {
   font-family: var(--bold-primary-font);
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2rem;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -108,10 +84,7 @@ h4 {
   font-family: var(--bold-primary-font);
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2rem;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -119,10 +92,7 @@ h5 {
   font-family: var(--bold-primary-font);
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2rem;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -130,10 +100,7 @@ h6 {
   font-family: var(--bold-primary-font);
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem;
-  padding-bottom: 1rem;
   line-height: 1.2rem;
-  font-weight: bold;
   color: var(--dark-primary-blue);
 }
 
@@ -142,8 +109,7 @@ p {
   font-size: 1.2rem;
   color: var(--paragraph-text-color);
   word-spacing: 0.25rem;
-  line-height: 1.5rem;
-  font-weight: normal;
+  line-height: 1.4rem;
 }
 
 span {
@@ -151,7 +117,6 @@ span {
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: var(--light-services-grey);
-  font-weight: normal;
 }
 
 ul {
@@ -162,33 +127,27 @@ ul {
 }
 
 li {
-  display: inline;
   color: var(--paragraph-text-color);
   font-size: 1rem;
   word-spacing: 0.25rem;
   line-height: 1.5rem;
-  font-weight: normal;
   font-family: var(--light-primary-font);
   padding: 1.25rem;
 }
 
 a {
-  display: block;
   color: var(--paragraph-text-color);
   font-size: 1rem;
   word-spacing: 0.25rem;
   line-height: 1.5rem;
-  font-weight: normal;
   font-family: var(--light-primary-font);
 }
 
 a:hover {
-  display: block;
   color: var(--dark-primary-blue);
   font-size: 1rem;
   word-spacing: 0.25rem;
   line-height: 1.5rem;
-  font-weight: normal;
   font-family: var(--light-primary-font);
 }
 
@@ -197,11 +156,8 @@ input {
   font-size: 1rem;
   color: var(--paragraph-text-color);
   word-spacing: 0.25rem;
-  line-height: 1.5rem;
-  font-weight: normal;
+  line-height: 1.3rem;
   border: 0.06rem solid var(--light-input-grey);
-  padding: 0.6rem;
-  padding-left: 1.5rem;
   background-color: var(--white-color);
 }
 
@@ -209,16 +165,13 @@ label {
   color: var(--dark-primary-blue);
   font-size: 1rem;
   word-spacing: 0.25rem;
-  line-height: 1.5rem;
-  font-weight: normal;
+  line-height: 1.3rem;
   font-family: var(--bold-primary-font);
 }
 
 select {
   font-size: 1rem;
-  padding: 0.125rem 0.25rem;
   line-height: 1.2rem;
-  font-weight: normal;
   color: var(--dark-primary-blue);
   font-family: var(--light-primary-font);
 }
@@ -227,17 +180,16 @@ option {
   font-size: 1rem;
   color: var(--dark-primary-blue);
   line-height: 1.2rem;
-  font-weight: normal;
   font-family: var(--light-primary-font);
 }
 
 img {
-  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 figure {
   border: 0.06rem solid var(--dark-primary-blue);
-  display: flex;
   padding: 0.25rem;
 }
 
@@ -249,106 +201,151 @@ figcaption {
   text-align: center;
 }
 
-
-/* for tablet view */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  h1{
-    font-size:2.2rem ;
-    line-height: 1.3rem;
-  }
-
-   h2{
+/* Mobile view */
+@media only screen and (min-width: 480px) {
+  h1 {
     font-size: 2rem;
-    line-height: 1.3rem;
+    line-height: 1.2rem;
   }
 
-  h3{
+  h2 {
     font-size: 1.8rem;
     line-height: 1.2rem;
   }
 
-  h4{
+  h3 {
+    font-size: 1.6rem;
+    line-height: 1rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  label {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  input {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+/* Tab view */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 1.2rem;
+  }
+
+  h4 {
     font-size: 1.6rem;
     line-height: 1.2rem;
   }
 
-  h5{
+  h5 {
     font-size: 1.4rem;
     line-height: 1.2rem;
   }
 
-  h6{
+  h6 {
     font-size: 1.2rem;
     line-height: 1.2rem;
   }
 
-  p{
+  p {
     font-size: 1.4rem;
     line-height: 1.5rem;
   }
 
-  label{
+  label {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
 
-  input{
+  input {
     font-size: 1.2rem;
-    line-height: 1.5rem;    
+    line-height: 1.5rem;
   }
-  
 }
 
-/* for desktop view */
-  @media only screen and (min-width: 1024px) {
-    h1{
-      font-size:2.4rem ;
-      line-height: 1.4rem;
-    }
-  
-     h2{
-      font-size: 2.2rem;
-      line-height: 1.4rem;
-    }
-  
-    h3{
-      font-size: 2rem;
-      line-height: 1.3rem;
-    }
-  
-    h4{
-      font-size: 1.8rem;
-      line-height: 1.3rem;
-    }
-  
-    h5{
-      font-size: 1.6rem;
-      line-height: 1.3rem;
-    }
-  
-    h6{
-      font-size: 1.4rem;
-      line-height: 1.3rem;
-    }
-  
-    p{
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-    }
-  
-    label{
-      font-size: 1.3rem;
-      line-height: 1.5rem;
-    }
-  
-    input{
-      font-size: 1.3rem;
-      line-height: 1.5rem;    
-    }
-    
-} 
+/* Desktop view */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 1.4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 1.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    line-height: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  label {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  input {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+
 section {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -358,7 +355,6 @@ section {
 footer {
   height: auto;
   background-color: var(--dark-primary-blue);
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
