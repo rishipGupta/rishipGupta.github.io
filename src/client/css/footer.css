@@ -1,0 +1,35 @@
+.footer{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    background: #021433;
+    color:#cccccc;
+}
+
+.footer img{
+    padding:1rem;
+    width:15rem;
+}
+
+.footer ul li{
+    padding:0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.follow-us{
+    margin:1rem;
+}
+.follow-us i{
+    padding:0 0.8rem;
+    color:#cccccc;
+    font-size: 1.25rem;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+}
+.copyright-text{
+    color:#cccccc;
+    font-size:1rem;
+    padding:0.25rem 0.25rem 0.75rem 0.25rem;
+}

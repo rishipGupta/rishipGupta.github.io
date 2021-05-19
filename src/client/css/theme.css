@@ -10,31 +10,40 @@ body {
 
 @font-face {
   font-family: "Nexa-Light";
-  src: url("../assets/fonts/Nexa-Bold.otf");
+  src: url("../assets/fonts/Nexa-Light.otf");
 }
 
 :root {
-  --light-primary-blue: #87c3f1;
+  --light-primary-blue: #9dc0db;
   --dark-primary-blue: #151e3b;
-  --light-input-grey: rgb(209, 204, 204);
-  --paragraph-text-color: #706c80;
+  --light-input-grey: #eeeeee;
+  --dark-input-grey:#b8b8b8;
+  --paragraph-text-color: #919195;
   --dark-btn-textcolor: hsl(0, 1%, 68%);
   --white-color: #ffffff;
   --black-color: rgb(0, 0, 0);
 }
 
+nav{
+  background-color:var(--white-color);
+  font-family: "Nexa-Light";
+}
+
 button {
   border: 0.06rem solid var(--dark-primary-blue);
-  padding: 0.6rem;
+  padding: 0.5rem;
+  font-size:1.2rem;
+  border-radius: 0.2rem;
   font-family: "Nexa-Light";
 }
 
 .dark-btn {
   background-color: var(--dark-primary-blue);
-  color: var(--dark-btn-textcolor);
+  color: var(--white-color);
   font-family: "Nexa-Light";
   border: 0.06rem solid var(--dark-primary-blue);
   padding: 0.6rem;
+  border-radius: 0.2rem;
 }
 
 .light-btn {
@@ -48,17 +57,17 @@ button {
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
+  line-height: 1;
   color: var(--dark-primary-blue);
 }
 
 h2 {
   font-family: "Nexa-Bold";
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2rem;
+  font-size: 1.6rem;
+  /* letter-spacing: 0.1rem; */
+  line-height: 1.6rem;
   color: var(--dark-primary-blue);
+  
 }
 
 h3 {
@@ -87,36 +96,38 @@ h5 {
 
 h6 {
   font-family: "Nexa-Bold";
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.0125rem;
   line-height: 1.2rem;
   color: var(--dark-primary-blue);
 }
 
 section{
-  padding: 2rem;
+  padding: 2rem 0.5rem;
 }
 
 p {
   font-family: "Nexa-Light";
   font-size: 1.2rem;
+  /* font-weight: 400; */
   color: var(--paragraph-text-color);
-  word-spacing: 0.25rem;
-  line-height: 1.4rem;
+  /* word-spacing: 0.25rem; */
+  line-height: 1.5rem;
 }
 
 span {
-  font-family: "Nexa-Light";
+  font-family: "Nexa-Bold";
   font-size: 1.2rem;
   line-height: 1.2rem;
-  color: var(--light-services-grey);
+  color: var(--light-input-grey);
 }
 
 ul {
   overflow: hidden;
   top: 0;
   width: 100%;
-  background-color: var(--white-color);
+  list-style-type: none;
+  /* background-color: var(--white-color); */
 }
 
 li {
@@ -133,6 +144,7 @@ a {
   word-spacing: 0.25rem;
   line-height: 1.5rem;
   font-family: "Nexa-Light";
+  text-decoration: none;
 }
 
 a:hover {
@@ -141,6 +153,7 @@ a:hover {
   word-spacing: 0.25rem;
   line-height: 1.5rem;
   font-family: "Nexa-Light";
+  text-decoration: underline;
 }
 
 input {
@@ -189,7 +202,8 @@ figcaption {
   background-color: var(--white-color);
   color: var(--dark-primary-blue);
   font: "Nexa-Light";
-  text-align: center;
+  /* text-align: center; */
+  font-size:1.15rem;
 }
 
 
@@ -241,7 +255,7 @@ figcaption {
   }
 
   section{
-    padding: 1.4rem;
+    padding: 0.25rem;
   }
 }
 
@@ -304,3 +318,4 @@ footer {
   align-items: center;
   text-align: center;
 }
+
