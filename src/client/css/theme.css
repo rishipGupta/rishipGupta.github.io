@@ -159,6 +159,7 @@ input {
   font-size: 0.8rem;
   color: var(--paragraph-text-color);
   word-spacing: 0.25rem;
+  outline:none;
   line-height: 1.3rem;
   border: 0.06rem solid var(--light-input-grey);
   background-color: var(--white-color);

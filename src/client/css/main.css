@@ -341,6 +341,7 @@ figcaption {
   .gps {
     margin: 0;
     width: 27%;
+    border-right: 1px solid var(--dark-input-grey);
   }
 
   .search-location {
