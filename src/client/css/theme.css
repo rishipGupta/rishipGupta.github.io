@@ -15,25 +15,27 @@ body {
 
 :root {
   --light-primary-blue: #9dc0db;
-  --dark-primary-blue: #151e3b;
+  --dark-primary-blue: #021433;
   --light-input-grey: #eeeeee;
-  --dark-input-grey:#b8b8b8;
-  --paragraph-text-color: #919195;
+  --footer-list-text: #cccccc;
+  --footer-end-text: #636668;
+  --dark-input-grey: #b8b8b8;
+  --paragraph-text-color: #29272e;
   --dark-btn-textcolor: hsl(0, 1%, 68%);
   --white-color: #ffffff;
   --black-color: rgb(0, 0, 0);
 }
 
-nav{
-  background-color:var(--white-color);
+nav {
+  background-color: var(--white-color);
   font-family: "Nexa-Light";
 }
 
 button {
-  border: 0.06rem solid var(--dark-primary-blue);
-  padding: 0.5rem;
-  font-size:1.2rem;
-  border-radius: 0.2rem;
+  /* border: 0.06rem solid var(--dark-primary-blue); */
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  color: var(--white-color);
   font-family: "Nexa-Light";
 }
 
@@ -41,17 +43,20 @@ button {
   background-color: var(--dark-primary-blue);
   color: var(--white-color);
   font-family: "Nexa-Light";
-  border: 0.06rem solid var(--dark-primary-blue);
-  padding: 0.6rem;
+  font-size: 0.9rem;
+  border: 0.125rem solid var(--dark-primary-blue);
+  padding: 0.8rem 3rem;
   border-radius: 0.2rem;
 }
 
 .light-btn {
-  background-color: var(--light-primary-blue);
+  background: #0099ff;
   color: var(--white-color);
-  border: 0.06rem solid var(--light-primary-blue);
-  padding: 0.6rem;
-  font-family: "Nexa-Light";  
+  border: 0.06rem solid #0099ff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.2rem;
+  font-family: "Nexa-Light";
+  font-size: 0.9rem;
 }
 
 h1 {
@@ -64,52 +69,45 @@ h1 {
 h2 {
   font-family: "Nexa-Bold";
   font-size: 1.6rem;
-  /* letter-spacing: 0.1rem; */
   line-height: 1.6rem;
   color: var(--dark-primary-blue);
-  
 }
 
 h3 {
   font-family: "Nexa-Bold";
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
   color: var(--dark-primary-blue);
 }
 
 h4 {
   font-family: "Nexa-Bold";
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
   line-height: 1.2rem;
   color: var(--dark-primary-blue);
 }
 
 h5 {
   font-family: "Nexa-Bold";
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1rem;
   color: var(--dark-primary-blue);
 }
 
 h6 {
   font-family: "Nexa-Bold";
-  font-size: 0.8rem;
-  letter-spacing: 0.0125rem;
-  line-height: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
   color: var(--dark-primary-blue);
 }
 
-section{
-  padding: 2rem 0.5rem;
+section {
+  padding: 2rem 1rem;
 }
 
 p {
   font-family: "Nexa-Light";
-  font-size: 1.2rem;
-  /* font-weight: 400; */
+  font-size: 1rem;
   color: var(--paragraph-text-color);
   /* word-spacing: 0.25rem; */
   line-height: 1.5rem;
@@ -131,10 +129,10 @@ ul {
 }
 
 li {
-  color: var(--paragraph-text-color);
-  font-size: 1rem;
-  word-spacing: 0.25rem;
-  line-height: 1.5rem;
+  color: var(--footer-list-text);
+  font-size: 0.9rem;
+  /* word-spacing: 0.25rem; */
+  line-height: 1rem;
   font-family: "Nexa-Light";
 }
 
@@ -158,7 +156,7 @@ a:hover {
 
 input {
   font-family: "Nexa-Light";
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--paragraph-text-color);
   word-spacing: 0.25rem;
   line-height: 1.3rem;
@@ -193,19 +191,31 @@ img {
   width: 100%;
 }
 
+i {
+  color: var(--footer-list-text);
+  font-size: 1rem;
+}
+
 figure {
-  border: 0.06rem solid var(--dark-primary-blue);
-  padding: 0.25rem;
+  border: none;
 }
 
 figcaption {
   background-color: var(--white-color);
-  color: var(--dark-primary-blue);
-  font: "Nexa-Light";
+  color: var(--footer-end-text);
+  font-family: "Nexa-Light";
   /* text-align: center; */
-  font-size:1.15rem;
+  font-size: 0.8rem;
 }
 
+footer {
+  height: auto;
+  background-color: var(--dark-primary-blue);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
 
 /* Tab view */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -215,33 +225,33 @@ figcaption {
   }
 
   h2 {
-    font-size: 2rem;
-    line-height: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   h3 {
-    font-size: 1.8rem;
-    line-height: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
   }
 
   h4 {
-    font-size: 1.6rem;
-    line-height: 1.2rem;
-  }
-
-  h5 {
-    font-size: 1.4rem;
-    line-height: 1.2rem;
-  }
-
-  h6 {
     font-size: 1.2rem;
     line-height: 1.2rem;
   }
 
+  h5 {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+
   p {
-    font-size: 1.4rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 
   label {
@@ -250,17 +260,23 @@ figcaption {
   }
 
   input {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
   }
 
-  section{
-    padding: 0.25rem;
+  li {
+    font-size: 0.8rem;
+    color: var(--footer-end-text);
+  }
+
+  i {
+    color: var(--footer-end-text);
+    font-size: 0.8rem;
   }
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 2.4rem;
     line-height: 1.4rem;
@@ -309,13 +325,4 @@ figcaption {
   section{
     padding: 1.2rem;
   }
-}
-
-footer {
-  height: auto;
-  background-color: var(--dark-primary-blue);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+} */
