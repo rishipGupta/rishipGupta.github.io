@@ -1,5 +1,5 @@
 .container{
-    background: #8fcaf1;
+    background:var(--blue-container-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +9,10 @@
 
 .container-title{
     color:white;
-  margin: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .container-subtitle{
     color:#021433;
-    padding: 1rem;
+    margin-bottom: 1rem;
 }
