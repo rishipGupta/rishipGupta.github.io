@@ -16,6 +16,16 @@
   color: #525659;
 }
 
+.main-nav__list {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+
+
+
 .hero-section {
   background-color: var(--light-primary-blue);
   display: flex;
@@ -26,12 +36,16 @@
 }
 
 .hero-section__title {
-  text-shadow: 0.5px 0.5px var(--dark-primary-blue);
+  text-shadow: 0.4px 0.4px var(--dark-primary-blue);
   margin-bottom: 1rem;
 }
 
-.hero-section__subtitle{
-  text-shadow: 0.15px 0.15px var(--paragraph-text-color);
+.hero-section__subtitle {
+  text-shadow: 0.1px 0.1px var(--paragraph-text-color);
+}
+
+.dummy-text {
+  display: none;
 }
 
 .hero-section__form {
@@ -39,7 +53,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top:1rem;
+  margin-top: 1rem;
   width: 100%;
 }
 
@@ -52,22 +66,21 @@
   justify-content: space-between;
   text-align: center;
   vertical-align: middle;
-
 }
 
 .assistance {
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .location-icon {
   width: 1rem;
   color: var(--dark-primary-blue);
-  padding-right:0.25rem;
+  padding-right: 0.25rem;
 }
 
 .location-input {
-  width: 90%;
+  width: 100%;
   border: none;
 }
 
@@ -75,7 +88,6 @@
   align-self: center;
   width: 1rem;
 }
-
 
 .how-it-works {
   display: flex;
@@ -92,8 +104,8 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin-top:1rem;
-  width:100%;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .how-it-works__service {
@@ -105,7 +117,6 @@
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
-  
 }
 
 .fix-consultation-block {
@@ -176,6 +187,7 @@
 .doctors-block {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .doctorImage-section {
   display: flex;
@@ -193,6 +205,10 @@
 
 .doctor-image img {
   object-fit: cover;
+}
+
+.doctors-toggle {
+  display: none;
 }
 
 figcaption {
@@ -235,6 +251,23 @@ figcaption {
   padding: 0.15rem 0.25rem;
 }
 
+.doctors-toggle__button {
+  /* margin-top: 2.5rem; */
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  background: var(--doctor-toggle-gray);
+  margin-right: 0.5rem;
+}
+
+.highlited-toggle__button {
+  height: 1rem;
+  width: 1rem;
+  background: transparent;
+  border-radius: 50%;
+  border: 2.5px solid var(--highlighted-toggle-blue);
+}
+
 .treatments {
   background-color: white;
   display: flex;
@@ -249,6 +282,7 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .treatments__image-block {
   position: relative;
@@ -270,7 +304,7 @@ figcaption {
   bottom: 0;
 }
 
-.treatment-image{
+.treatment-image {
   object-fit: cover;
 }
 
@@ -287,11 +321,12 @@ figcaption {
 .treatment_title {
   color: var(--white-color);
   text-align: right;
+  font-size: 1rem;
 }
 
 .treatment_subtitle {
   color: var(--white-color);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   padding: 0;
 }
 
@@ -304,11 +339,15 @@ figcaption {
   text-align: center;
 }
 
+.exclusive-services__dummy-text {
+  display: none;
+}
+
 .exclusive-services__icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
-  width:100%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .exclusive-services__icon {
@@ -317,36 +356,35 @@ figcaption {
   align-items: center;
   justify-content: flex-start;
   height: auto;
-  width: 48%;
+  width: 49%;
   border-radius: 1rem;
   background-color: white;
-  margin-top:1rem;
+  margin-top: 0.5rem;
   padding-bottom: 1.1rem;
   flex-shrink: 2;
 }
 
-.icon-figure{
-  width:50%;
+.icon-figure {
+  width: 50%;
 }
 
-.icon-figure img{
+.icon-figure img {
   object-fit: contain;
 }
 
-.icon-figurecaption{
+.icon-figurecaption {
   color: #5e5e5e;
   font-weight: bolder;
   font-family: "Nexa-Bold";
-  font-size:0.75rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 48rem) {
-
   .hero-section__form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
   }
   .gps {
     margin: 0;
@@ -359,19 +397,19 @@ figcaption {
     margin: 0;
   }
 
-  .dark-btn{
-    width:20%;
+  .dark-btn {
+    width: 20%;
   }
 
   .how-it-works__services {
     align-items: flex-start;
     position: relative;
-    width:100%;
+    width: 100%;
   }
 
   .how-it-works__service {
     width: 45%;
-    padding:0.8rem;
+    padding: 0.8rem;
   }
 
   .service-tag {
@@ -393,12 +431,12 @@ figcaption {
     width: 45%;
   }
 
-  .service-image{
-    width:80%;
-    margin-bottom:0;
+  .service-image {
+    width: 80%;
+    margin-bottom: 0;
   }
 
-  .service-image img{
+  .service-image img {
     object-fit: contain;
   }
 
@@ -406,7 +444,7 @@ figcaption {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top:0.25rem;
+    margin-top: 0.25rem;
   }
 
   .doctorImage-section {
@@ -416,11 +454,10 @@ figcaption {
   .name {
     font-size: 0.8rem;
   }
-  
+
   .doctor-detail {
     font-size: 0.7rem;
   }
-
 
   .treatments-images {
     flex-direction: row;
@@ -432,19 +469,344 @@ figcaption {
     width: 49%;
     height: 18rem;
   }
-  .treatment_subtitle{
-    font-size:0.7rem;
+  .treatment_subtitle {
+    font-size: 0.7rem;
   }
 
   .exclusive-services__icon {
     width: 32%;
   }
 
-  .icon-figure{
-    width:30%;
+  .icon-figure {
+    width: 30%;
   }
 
-  .icon-figurecaption{
+  .icon-figurecaption {
     font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .main-nav__logo {
+    width: 11rem;
+  }
+
+  #toggle-bars {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list li {
+    font-size: 1rem;
+    color:var(--main-nav-list-gray);
+    /* text-shadow: 1px 1px var(--main-nav-list-gray); */
+    font-weight: bold;
+  }
+
+ 
+
+  .main-nav__list li {
+    text-shadow: 0.15px 0.15px #526075;
+  }
+
+  
+
+  .hero-section {
+    background: url("../assets/images/bannerimg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 30rem;
+    align-items: flex-start;
+  }
+
+  .hero-section__title {
+    margin-bottom: 1rem;
+  }
+
+  .hero-section__subtitle {
+    font-weight: bold;
+  }
+
+  .hero-section__description {
+    width: 50%;
+  }
+
+  .hero-section__form {
+    justify-content: flex-start;
+    width: 66%;
+    margin-top: 2rem;
+  }
+
+  .gps {
+    width: 33%;
+    flex-grow: 2;
+  }
+
+  .hero-section__location {
+    padding: 1rem;
+  }
+
+  .location-input {
+    padding-left: 0.5rem;
+  }
+
+  .search-location {
+    flex-grow: 4;
+    /* width:80%; */
+  }
+
+  .location-icon {
+    font-size: 1.25rem;
+    flex-grow: 2;
+  }
+
+  .location-gps {
+    width: 1.25rem;
+    flex-grow: 4;
+  }
+
+  .assistance {
+    width: 47%;
+    flex-grow: 5;
+  }
+
+  .how-it-works {
+    align-items: flex-start;
+  }
+
+  .how-it-works-section__description {
+    display: none;
+  }
+
+  .dummy-text {
+    display: block;
+    font-weight: bold;
+  }
+
+  .how-it-works__service {
+    width: 40%;
+    padding: 3.5rem 2rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    text-align: left;
+    border: 2.5px solid var(--light-gray-background-color);
+  }
+
+  .fix-consultation-block {
+    border-color: var(--how-it-works-list-blue);
+  }
+
+  .service-tag {
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    color:var(--how-it-works-text-gray);
+  }
+
+  .service-number {
+    font-size: 1.7rem;
+    color:var(--how-it-works-number-gray);
+  }
+
+  .servicenum-01{
+    color:var(--how-it-works-list-blue);
+  }
+
+  .service-01{
+    color:var(--search-btn-desktop);
+  }
+
+  .how-it-works__services {
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .service-imageBlock {
+    top: 3%;
+    right: -5%;
+    width: 65%;
+  }
+
+  .service-image {
+    width: 75%;
+    margin-bottom: 0;
+}
+
+  .service-image__title {
+    color:var(--search-btn-desktop);
+    padding-top: 1.25rem;
+    padding-bottom: 0.75rem;
+    text-shadow: 0.5px 0.5px var(--search-btn-desktop);
+  }
+
+  .service-image__subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 55%;
+  }
+
+  .doctors {
+    align-items: flex-start;
+    text-align: left;
+    color:var(--search-btn-desktop);
+  }
+
+  .doctors-block {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .doctorImage-section {
+    width: 24.5%;
+  }
+
+  .doctors-subtitle {
+    display: none;
+  }
+  .doctors__dummy-text {
+    color: white;
+  }
+
+  .name {
+    font-size: 1.1rem;
+}
+
+.doctor-detail {
+  font-size: 0.75rem;
+}
+
+  .doctors-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 5rem; */
+    margin-left: 1.5rem;
+  }
+
+  .treatments {
+    align-items: flex-start;
+  }
+
+  .treatments__description {
+    display: none;
+  }
+
+  .treatments-images {
+    position: relative;
+    /* height: 100vh; */
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 0.75rem;
+  }
+
+  .dentistry {
+    height: 100%;
+    width: auto;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .cancer {
+    height: 100%;
+    width: auto;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .cancer img {
+    object-position: right;
+  }
+
+  .cardiology {
+    height: 100%;
+    width: auto;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .multiorgan {
+    height: 100%;
+    width: auto;
+    grid-row-start: 5;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .multiorgan img {
+    object-position: -119px;
+  }
+
+  .orthopedics {
+    height: 100%;
+    width: auto;
+    grid-row-start: 7;
+    grid-row-end: 13;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .infertility {
+    height: 100%;
+    width: auto;
+    grid-row-start: 6;
+    grid-row-end: 13;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .infertility img {
+    object-position: -40px;
+  }
+
+  .treatment_title {
+    font-size: 1.15rem;
+}
+
+.treatment_subtitle {
+  padding-top:0.3rem;
+  font-size: 0.85rem;
+}
+
+  .exclusive-services {
+    align-items: flex-start;
+    background: var(--exclusive-services-grey-desktop);
+  }
+
+  .exclusive-services__subtitle {
+    display: none;
+  }
+
+  .exclusive-services__icons {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .exclusive-services__icon {
+    width: 16.45%;
+    height: 14rem;
+    border-radius: 0;
+    margin-top: 0;
+    justify-content: center;
+  }
+
+  .icon-figure {
+    width: 45%;
+  }
+
+  .icon-figurecaption {
+    font-size: 1rem;
+    color:var(--services-icon-text-gray);
   }
 }

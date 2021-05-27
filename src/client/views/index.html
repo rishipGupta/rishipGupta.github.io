@@ -20,40 +20,63 @@
       <figure class="main-nav__logo">
         <img src="../assets/images/Logo.jpg" alt="logo" />
       </figure>
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <li>Doctors</li>
+        <li>Hospitals</li>
+        <li>Treatment</li>
+        <li>Other Services</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login/Sign Up</button>
+        <button class="dark-btn main-nav__btn" id="get-quote-btn">Get a Quote</button>
+      </div>
     </nav>
     <main>
       <section class="hero-section">
-        <h2 class="hero-section__title">Find Affordabble Healthcare</h2>
-        <p class="hero-section__subtitle">
+        <h2 class="hero-section__title">Find Affordable Healthcare</h2>
+        <p class="hero-section__subtitle hero-section__description">
           Join the thousands of others who have exercised their rights to
           quality healthcare at a price you can afford
         </p>
         <form class="hero-section__form" action="#">
           <!-- <div class="hero-section__inputs"> -->
-            <div class="hero-section__location gps">
-              <i class="fas fa-map-marker-alt location-icon"></i>
-              <input class="location-input search-location" type="text" placeholder="Ahemdabad" />
-              <figure class="location-gps">
-                <img src="../assets/images/location_gps.png" />
-              </figure>
-            </div>
-            <div class="hero-section__location assistance">
-              <input
-                class="location-input"
-                type="text"
-                placeholder="Search for Doctor, hospitals and treatments"
-              />
-            </div>
+          <div class="hero-section__location gps">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            <input
+              class="location-input search-location"
+              type="text"
+              placeholder="Ahemdabad"
+            />
+            <figure class="location-gps">
+              <img class="gps-image" src="../assets/images/location_gps.png" />
+            </figure>
+          </div>
+          <div class="hero-section__location assistance">
+            <input
+              class="location-input"
+              type="text"
+              placeholder="Search for Doctor, hospitals and treatments"
+            />
+          </div>
           <!-- </div> -->
-          <button class="dark-btn hero-section__btn">Search</button>
+          <button class="dark-btn" id="hero-section__btn">Search</button>
         </form>
       </section>
       <section class="how-it-works">
         <h2 class="hero-section__title">How it works</h2>
-        <p class="hero-section__subtitle">
+        <p class="hero-section__subtitle how-it-works-section__description">
           Various facilities are provided here. But there is a protocol which
           needs to be followed so that you get the service at its best.
+        </p>
+
+        <p class="dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
         </p>
         <div class="how-it-works__services">
           <ul class="how-it-works__service fix-consultation-block">
@@ -66,7 +89,7 @@
             </figure>
             <h5 class="service-image__title">Fix Consultation</h5>
             <!-- <p class="service-image__subtitle"> -->
-              <p>
+            <p class="service-image__subtitle">
               This depicts that the user will have to fix appointment first when
               it selects a particular doctor.
             </p>
@@ -107,6 +130,14 @@
           there. Now, with the addition of Aston Center and Zale Lipshy
           Hospital. UT Southeastern is also a mecca for patients.
         </p>
+
+        <p class="dummy-text doctors__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+
         <article class="doctors-block">
           <figure class="doctorImage-section">
             <figure class="doctor-image">
@@ -176,19 +207,33 @@
             </div>
           </figure>
         </article>
+        <div class="doctors-toggle">
+          <div class="doctors-toggle__button highlited-toggle__button"></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+        </div>
       </section>
 
       <section class="treatments">
         <h2 class="hero-section__title">Featured Medical Treatment</h2>
-        <p class="hero-section__subtitle">
+        <p class="hero-section__subtitle treatments__description">
           Join the thousands of others who have exercised their rights to
           quality healthcare at a price you can afford
         </p>
+
+        <p class="dummy-text treatments__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+
         <article class="treatments-images">
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block dentistry">
             <div class="backdrop"></div>
             <img
-              class="treatment-image"
+              class="treatment-image "
               src="../assets/images/dentinstimage--009.jpg"
               alt="dentistry"
             />
@@ -197,7 +242,7 @@
               <p class="treatment_subtitle">50+ Specialists</p>
             </div>
           </figure>
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block cancer">
             <div class="backdrop"></div>
             <img
               class="treatment-image"
@@ -209,7 +254,7 @@
               <p class="treatment_subtitle">50+ Specialists</p>
             </div>
           </figure>
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block cardiology">
             <div class="backdrop"></div>
             <img
               class="treatment-image"
@@ -221,7 +266,7 @@
               <p class="treatment_subtitle">50+ Specialists</p>
             </div>
           </figure>
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block multiorgan">
             <div class="backdrop"></div>
             <img
               class="treatment-image"
@@ -233,7 +278,7 @@
               <p class="treatment_subtitle">50+ Specialists</p>
             </div>
           </figure>
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block orthopedics">
             <div class="backdrop"></div>
             <img
               class="treatment-image"
@@ -245,7 +290,7 @@
               <p class="treatment_subtitle">50+ Specialists</p>
             </div>
           </figure>
-          <figure class="treatments__image-block">
+          <figure class="treatments__image-block infertility">
             <div class="backdrop"></div>
             <img
               class="treatment-image"
@@ -258,62 +303,79 @@
             </div>
           </figure>
         </article>
+        <div class="doctors-toggle">
+          <div class="doctors-toggle__button highlited-toggle__button"></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+        </div>
       </section>
       <section class="exclusive-services">
         <h2 class="hero-section__title">Exclusive services</h2>
-        <p class="hero-section__subtitle">
+        <p class="hero-section__subtitle exclusive-services__subtitle">
           We want you to be comfortable and thus apart from threating you
           illness, we provide you with other services that you can see
+        </p>
+
+        <p class="dummy-text services__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
         </p>
         <div class="exclusive-services__icons">
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
               <img src="../assets/images/travel.png" alt="travel" />
             </figure>
-            <figcaption class = "icon-figurecaption">TRAVEL</figcaption>
+            <figcaption class="icon-figurecaption">TRAVEL</figcaption>
           </figure>
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
               <img src="../assets/images/food.png" alt="food" />
             </figure>
-            <figcaption class = "icon-figurecaption">FOOD</figcaption>
+            <figcaption class="icon-figurecaption">FOOD</figcaption>
           </figure>
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
               <img src="../assets/images/accomodation.png" alt="accomodation" />
             </figure>
-            <figcaption class = "icon-figurecaption">ACCOMODATION</figcaption>
+            <figcaption class="icon-figurecaption">ACCOMODATION</figcaption>
           </figure>
 
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
               <img src="../assets/images/labs.png" alt="labs" />
             </figure>
-            <figcaption class = "icon-figurecaption">LABS</figcaption>
+            <figcaption class="icon-figurecaption">LABS</figcaption>
           </figure>
 
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
               <img src="../assets/images/reports.png" alt="reports" />
             </figure>
-            <figcaption class = "icon-figurecaption">REPORTS</figcaption>
+            <figcaption class="icon-figurecaption">REPORTS</figcaption>
           </figure>
 
           <figure class="exclusive-services__icon">
             <figure class="icon-figure">
-              <img src="../assets/images/ambulanceIcons-06.png" alt="ambulance"/>
+              <img
+                src="../assets/images/ambulanceIcons-06.png"
+                alt="ambulance"
+              />
             </figure>
-            <figcaption class = "icon-figurecaption">AMBULANCE</figcaption>
+            <figcaption class="icon-figurecaption">AMBULANCE</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="container">
-        <h2 class="container-title">Need help?</h2>
-        <p class="container-subtitle">
-          Just let us know, we wil happy to assist you
-        </p>
-        <button class="light-btn">Submit your enquiry</button>
+        <div class="container__text">
+          <h2 class="container-title">Need help?</h2>
+          <p class="container-subtitle">
+            Just let us know, we wil happy to assist you
+          </p>
+        </div>
+        <button class="light-btn submit-enquiry-btn">Submit your enquiry</button>
       </section>
       <footer class="footer">
         <div class="footer-tabview">

@@ -14,13 +14,13 @@ body {
 }
 
 :root {
-  --light-primary-blue: #93BEDE;
-  --dark-primary-blue: #121D36;
-  --light-btn-color:#0173B2;
-  --dark-btn-background:#151E3B;
-  --dark-background-color:#22263F;
-  --light-gray-background-color:#F3F3F3;
-  --blue-container-color:#7AB0D4;
+  --light-primary-blue: #93bede;
+  --dark-primary-blue: #202541;
+  --light-btn-color: #0173b2;
+  --dark-btn-background: #151e3b;
+  --dark-background-color: #22263f;
+  --light-gray-background-color: #f3f3f3;
+  --blue-container-color: #7ab0d4;
   --light-input-grey: #d6d6d6;
   --footer-list-text: #cccccc;
   --footer-end-text: #636668;
@@ -29,16 +29,30 @@ body {
   --dark-btn-textcolor: hsl(0, 1%, 68%);
   --white-color: #ffffff;
   --black-color: rgb(0, 0, 0);
+/* desktop view colors */
+  --search-btn-desktop:#2A2D3E;
+  --paragraph-desktop-gray:#584549;
+  --main-nav-list-gray:#222222;
+  --how-it-works-list-blue:#9CBFDA;
+  --how-it-works-text-gray:#BDBDBD;
+  --how-it-works-number-gray:#DFDFDF;
+  --doctor-toggle-gray:#8D8F98;
+  --highlighted-toggle-blue:#0A6499;
+  --exclusive-services-grey-desktop:#F5F5F5;
+  --services-icon-text-gray:#A6ABB0;
+  --submit-enquiry-blue-desktop:#3C7ABE;
+
+
 }
 
 nav {
   background-color: var(--white-color);
   font-family: "Nexa-Light";
-  padding:1rem;
+  padding: 1rem;
 }
 
 button {
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 0.8rem;
   font-size: 0.9rem;
   color: var(--white-color);
   font-family: "Nexa-Light";
@@ -54,13 +68,19 @@ button {
 }
 
 .light-btn {
-  background:var(--light-btn-color);
+  background: var(--light-btn-color);
   color: var(--white-color);
   border: 0.06rem solid var(--light-btn-color);
   padding: 0.6rem 0.9rem;
   border-radius: 0.3rem;
   font-family: "Nexa-Light";
   font-size: 0.9rem;
+}
+
+.nav-buttons {
+  white-space: nowrap;
+  text-align: center;
+  display: none;
 }
 
 h1 {
@@ -159,7 +179,7 @@ input {
   font-family: "Nexa-Light";
   font-size: 0.7rem;
   color: var(--paragraph-text-color);
-  outline:none;
+  outline: none;
   line-height: 1.3rem;
   border: 0.06rem solid var(--light-input-grey);
   background-color: var(--white-color);
@@ -219,8 +239,8 @@ footer {
 
 /* Tab view */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main-nav{
-    padding:1rem 2rem;
+  .main-nav {
+    padding: 1rem 2rem;
   }
 
   h1 {
@@ -278,27 +298,89 @@ footer {
     font-size: 0.8rem;
   }
 
-section{
-    padding:2rem 2rem;
+  section {
+    padding: 2rem 2rem;
   }
 
-  .light-btn{
-    padding:0.5rem 0.8rem;
-    font-size:0.85rem;
-}
+  .light-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* Desktop view */
-/* @media only screen and (min-width: 1024px) {
-  h1 {
+@media only screen and (min-width: 1024px) {
+  .main-nav {
+    padding: 1.25rem 5rem;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .main-nav__btn {
+    padding: 0.65rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--main-nav-list-gray);
+  }
+
+  .login-btn {
+    background: transparent;
+    color: var(--main-nav-list-gray);
+    margin-right: 0.25rem;
+    text-shadow: 0.25px 0.25px var(--main-nav-list-gray);
+
+  }
+
+  #get-quote-btn {
+    width: auto;
+    background:var(--search-btn-desktop);
+  }
+
+  li {
+    font-size: 0.85rem;
+    color: #526075;
+    /* font-family: "Nexa-Bold"; */
+  }
+
+  h2 {
+    font-size:2.4rem;
+    line-height: 2.5rem;
+    color:var(--search-btn-desktop);
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color:var(--paragraph-desktop-gray);
+  }
+
+  input {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
+  #hero-section__btn {
+    padding: 1.2rem 2rem;
+    font-size: 0.9rem;
+    width: 21%;
+    border-radius: 0;
+    background:var(--search-btn-desktop);
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.3rem;
+  }
+
+  /* h1 {
     font-size: 2.4rem;
     line-height: 1.4rem;
   }
 
-  h2 {
-    font-size: 2.2rem;
-    line-height: 1.4rem;
-  }
+  
 
   h3 {
     font-size: 2rem;
@@ -310,32 +392,21 @@ section{
     line-height: 1.3rem;
   }
 
-  h5 {
-    font-size: 1.6rem;
-    line-height: 1.3rem;
-  }
-
-  h6 {
-    font-size: 1.4rem;
-    line-height: 1.3rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-  }
+  
 
   label {
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
 
-  input {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
+  */
+  .submit-enquiry-btn {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.2rem;
+    background: var(--submit-enquiry-blue-desktop);
   }
 
-  section{
-    padding: 1.2rem;
+  section {
+    padding: 4rem 6.25rem;
   }
-} */
+}
