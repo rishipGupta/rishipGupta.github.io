@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/container.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/doctors.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Doctors</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <figure class="main-nav__logo">
+        <img src="../assets/images/Logo.jpg" alt="logo" />
+      </figure>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <li>Doctors</li>
+        <li>Hospitals</li>
+        <li>Treatment</li>
+        <li>Other Services</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login/Sign Up</button>
+        <button class="dark-btn main-nav__btn" id="get-quote-btn">
+          Get a Quote
+        </button>
+      </div>
+    </nav>
+    <header class="doctor-tab-header">
+      <div class="header-img">
+        <h2 class="header-title">
+          Cardiac Surgeon in <span class="header-location-text">Delhi</span>
+        </h2>
+      </div>
+    </header>
+    <main>
+      <section class="doctors-container">
+        <section class="doctors-list">
+          <h5 class="doctors-list__title">Home / Doctors List</h5>
+          <div class="sort">
+            <select class="doctors-list__sort" name="Sort" id="sort">
+              <option value="#">Sort by</option>
+            </select>
+            <div class="sortby-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </section>
+        <div class="tab-container">
+          <aside class="filterby">
+            <div class="aside-container-filter">Filter By</div>
+            <div class="categories">
+              <div class="categories-title">
+                <p>Location</p>
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                  <div class="search-line"></div>
+                </div>
+              </div>
+              <div class="checkbox-options">
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Dlf Cyber City
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Dwarka
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Lajpat Nagar
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Palam Vihar
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Punjabi Baag
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Pusa Road
+                </label>
+              </div>
+              <div class="show-more">
+                <i class="fas fa-plus show-more__icon"></i>
+                <p class="show-more__text">Show More</p>
+              </div>
+              <hr class="category-end-line">
+
+              <div class="categories-title">
+                <p>Treatment</p>
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                  <div class="search-line"></div>
+                </div>
+              </div>
+              <div class="checkbox-options">
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Multi Organ Transplant
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Orthopedic Surgery
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Infertility Treatment
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Dentistry
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Cardiology
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Cancer
+                </label>
+              </div>
+              <div class="show-more">
+                <i class="fas fa-plus show-more__icon"></i>
+                <p class="show-more__text">Show More</p>
+              </div>
+              <hr class="category-end-line">
+
+              <div class="categories-title">
+                <p>Hospitals</p>
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                  <div class="search-line"></div>
+                </div>
+              </div>
+              <div class="checkbox-options">
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Apollo Hospital
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Manipal North Side Hospital
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Northstar
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />AIIMS
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Fortis Hospital
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />Elbit Diagnostic
+                </label>
+              </div>
+              <div class="show-more">
+                <i class="fas fa-plus show-more__icon"></i>
+                <p class="show-more__text">Show More</p>
+              </div>
+              <hr class="category-end-line">
+
+              <div class="categories-title">
+                <p>Years of Experience</p>
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                  <div class="search-line"></div>
+                </div>
+              </div>
+              <div class="checkbox-options">
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />30+
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />25+
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />20+
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />15+
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />10+
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" class="checkbox-info" />5+
+                </label>
+              </div>
+              <div class="show-more">
+                <i class="fas fa-plus show-more__icon"></i>
+                <p class="show-more__text">Show More</p>
+              </div>
+              <hr class="category-end-line">
+            </div>
+          </aside>
+          <section class="doctors-section">
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Duke Sanson</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Neuro Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>MD</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>AIIMS</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Australia</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor1image--002.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Charlie Moon</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Cardiac Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>MD. FRCP. MRCP</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>AIIMS</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>New Delhi</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor4image--005.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Georgia Peter</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Cancer Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>Director-Health Department</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>UT. Southwest</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>London</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor3image--004.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Rose Moon</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Plastic Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>MD</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>Reconstructive Surgery Dept</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Dubai</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor2image--003.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Duke Sanson</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Neuro Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>MD</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>AIIMS</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Australia</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor1image--002.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+            <div class="doctor-details">
+              <div class="name-container">
+                <span class="horizontal-line"></span>
+                <h4 class="doc-name">Charlie Moon</h4>
+              </div>
+
+              <div class="info-container">
+                <article class="doc-info info-1">
+                  <i class="fas fa-certificate"></i>
+                  <span>Cardiac Surgeon</span>
+                </article>
+                <article class="doc-info info-2">
+                  <i class="fas fa-award"></i>
+                  <span>MD. FRCP. MRCP</span>
+                </article>
+                <article class="doc-info info-3">
+                  <i class="far fa-clock"></i>
+                  <span>10 Years of Experience</span>
+                </article>
+                <article class="doc-info info-4">
+                  <i class="fas fa-clipboard-list"></i>
+                  <span>AIIMS</span>
+                </article>
+                <article class="doc-info info-5">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>New Delhi</span>
+                </article>
+                <button class="dark-btn appointment-btn" type="button">
+                  Book an appointment
+                </button>
+              </div>
+              <figure class="doc-figure">
+                <img
+                  src="../assets/images/doctor4image--005.jpg"
+                  alt="doctor image"
+                  class="doc-image"
+                />
+              </figure>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="container doc-enquiry">
+        <div class="container__text">
+          <h2 class="container-title">Need help?</h2>
+          <p class="container-subtitle">
+            Just let us know, we wil happy to assist you
+          </p>
+        </div>
+        <button class="light-btn submit-enquiry-btn">
+          Submit your enquiry
+        </button>
+      </section>
+      <footer class="footer" id="doc-footer">
+        <div class="footer-tabview">
+          <figure class="footer-logo">
+            <img src="../assets/images/logoFooter.png" alt="" />
+          </figure>
+          <h2 class="follow-us-text">TVASTRA</h2>
+          <ul id="footer-services">
+            <li>Doctor</li>
+            <li>Hospital</li>
+            <li>Treatment</li>
+            <li>Other Services</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+        <div class="footer-tabview copyright-footer">
+          <div class="follow-us">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <h2 class="follow-us-text">FOLLOW US</h2>
+          <ul id="social-media">
+            <li>Facebook</li>
+            <li>Pinterst</li>
+            <li>Twitter</li>
+            <li>Google+</li>
+            <li>Instagram</li>
+          </ul>
+          <div class="copyright">
+            <h6 class="copyright-text">All Rights Reserved.</h6>
+            <i class="far fa-copyright copyright-icon"></i>
+            <h6 class="copyright-text">tvastra 2018</h6>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

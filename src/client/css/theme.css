@@ -200,6 +200,12 @@ select {
   font-family: "Nexa-Light";
 }
 
+aside{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "Nexa-Bold";
+}
+
 option {
   font-size: 1rem;
   color: var(--dark-primary-blue);
