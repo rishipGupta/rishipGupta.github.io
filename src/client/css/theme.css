@@ -83,6 +83,20 @@ button {
   display: none;
 }
 
+.appointment-btn {
+  display: block;
+  margin: 1rem auto;
+  width: auto;
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+}
+
+.submit-enquiry-btn {
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+}
+
+
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
@@ -244,9 +258,22 @@ footer {
 }
 
 /* Tab view */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 48rem) and (max-width: 64rem) {
   .main-nav {
     padding: 1rem 2rem;
+  }
+
+  .dark-btn {
+    width: 20%;
+  }
+
+  .appointment-btn {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0.5rem;
+    width:auto;
   }
 
   h1 {
@@ -315,7 +342,7 @@ footer {
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64rem) {
   .main-nav {
     padding: 1.25rem 5rem;
   }
@@ -342,6 +369,15 @@ footer {
   #get-quote-btn {
     width: auto;
     background:var(--search-btn-desktop);
+  }
+
+  .appointment-btn {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0.5rem;
+    width:auto;
   }
 
   li {
