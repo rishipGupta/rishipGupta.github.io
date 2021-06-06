@@ -8,13 +8,22 @@ body{
   background: var(--background-blue);
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
+
+  display:grid;
+  grid-template-rows: 20% 60% 20%;
+  /* align-self:start; */
 }
 
 html {
   height: -webkit-fill-available;
+}
+
+.main-nav{
+  /* position: absolute; */
+  align-self: start;
 }
 
 .main-container {
