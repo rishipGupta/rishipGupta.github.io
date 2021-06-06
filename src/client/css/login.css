@@ -8,22 +8,25 @@
 } */
 
 html{
-  height:100vh;
+  /* height:100vh; */
 }  
 
 body{
   background: var(--background-blue);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main-container {
   /* background: var(--background-blue); */
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12rem 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .login-section {
