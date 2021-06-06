@@ -123,12 +123,12 @@ html {
   /* width: 100%; */
   background: transparent;
   /* position: absolute; */
-  padding:0;
+  padding:2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   grid-row:3/4;
-  align-self:center;
+  align-self:end;
 }
 
 .login-footer-text {
