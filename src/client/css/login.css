@@ -3,9 +3,6 @@
 }
 
 
-html {
-  height: -webkit-fill-available;
-}
 
 body{
   background: var(--background-blue);
@@ -15,6 +12,11 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
+
+html {
+  height: -webkit-fill-available;
+}
+
 .main-container {
   /* background: var(--background-blue); */
   /* height: 100vh; */
