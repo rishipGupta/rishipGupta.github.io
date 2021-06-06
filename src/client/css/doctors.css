@@ -380,6 +380,7 @@
   }
 
   .header-title {
+    top:40%;
     left: 5rem;
     font-family: "Nexa-Light";
   }
