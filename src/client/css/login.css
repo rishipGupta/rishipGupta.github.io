@@ -2,18 +2,15 @@
   --background-blue: #9cbfda;
 }
 
-/* .main-nav {
-  position: absolute;
-  width: 100%;
-} */
 
-html{
-  /* height:100vh; */
-}  
+html {
+  height: -webkit-fill-available;
+}
 
 body{
   background: var(--background-blue);
   height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
