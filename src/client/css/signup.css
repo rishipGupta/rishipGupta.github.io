@@ -70,7 +70,10 @@
     width: 100%;
     font-size:0.8rem;
     color:#8e8e9a;
+    outline: none;
+    background: transparent;
   }
+
   .signup-section-btn {
     background: #2a2d3e;
     padding: 0.5rem;

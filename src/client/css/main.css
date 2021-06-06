@@ -24,8 +24,6 @@
   display: none;
 }
 
-
-
 .hero-section {
   background-color: var(--light-primary-blue);
   display: flex;
@@ -397,10 +395,6 @@ figcaption {
     margin: 0;
   }
 
-  .dark-btn {
-    width: 20%;
-  }
-
   .how-it-works__services {
     align-items: flex-start;
     position: relative;
@@ -501,18 +495,14 @@ figcaption {
 
   .main-nav__list li {
     font-size: 1rem;
-    color:var(--main-nav-list-gray);
+    color: var(--main-nav-list-gray);
     /* text-shadow: 1px 1px var(--main-nav-list-gray); */
     font-weight: bold;
   }
 
- 
-
   .main-nav__list li {
     text-shadow: 0.15px 0.15px #526075;
   }
-
-  
 
   .hero-section {
     background: url("../assets/images/bannerimg1.jpg");
@@ -521,6 +511,10 @@ figcaption {
     background-position: right bottom;
     height: 30rem;
     align-items: flex-start;
+  }
+
+  .hero-section__location {
+    align-items: center;
   }
 
   .hero-section__title {
@@ -544,6 +538,7 @@ figcaption {
   .gps {
     width: 33%;
     flex-grow: 2;
+    align-items: baseline;
   }
 
   .hero-section__location {
@@ -552,6 +547,7 @@ figcaption {
 
   .location-input {
     padding-left: 0.5rem;
+    font-size: 1rem;
   }
 
   .search-location {
@@ -589,7 +585,7 @@ figcaption {
 
   .how-it-works__service {
     width: 40%;
-    padding: 3.5rem 2rem;
+    padding: 3rem 2rem;
     margin-top: 0;
     margin-bottom: 0.3rem;
     text-align: left;
@@ -602,21 +598,21 @@ figcaption {
 
   .service-tag {
     padding-left: 3rem;
-    font-size: 1.4rem;
-    color:var(--how-it-works-text-gray);
+    font-size: 1.6rem;
+    color: var(--how-it-works-text-gray);
   }
 
   .service-number {
     font-size: 1.7rem;
-    color:var(--how-it-works-number-gray);
+    color: var(--how-it-works-number-gray);
   }
 
-  .servicenum-01{
-    color:var(--how-it-works-list-blue);
+  .servicenum-01 {
+    color: var(--how-it-works-list-blue);
   }
 
-  .service-01{
-    color:var(--search-btn-desktop);
+  .service-01 {
+    color: var(--search-btn-desktop);
   }
 
   .how-it-works__services {
@@ -624,25 +620,25 @@ figcaption {
     margin-bottom: 2.5rem;
   }
   .service-imageBlock {
-    top: 3%;
-    right: -5%;
-    width: 65%;
+    top: 0%;
+    right: 3%;
+    width: 50%;
   }
 
   .service-image {
     width: 75%;
     margin-bottom: 0;
-}
+  }
 
   .service-image__title {
-    color:var(--search-btn-desktop);
+    color: var(--search-btn-desktop);
     padding-top: 1.25rem;
     padding-bottom: 0.75rem;
     text-shadow: 0.5px 0.5px var(--search-btn-desktop);
   }
 
   .service-image__subtitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     width: 55%;
@@ -651,7 +647,7 @@ figcaption {
   .doctors {
     align-items: flex-start;
     text-align: left;
-    color:var(--search-btn-desktop);
+    color: var(--search-btn-desktop);
   }
 
   .doctors-block {
@@ -673,11 +669,11 @@ figcaption {
 
   .name {
     font-size: 1.1rem;
-}
+  }
 
-.doctor-detail {
-  font-size: 0.75rem;
-}
+  .doctor-detail {
+    font-size: 0.75rem;
+  }
 
   .doctors-toggle {
     display: flex;
@@ -771,13 +767,13 @@ figcaption {
   }
 
   .treatment_title {
-    font-size: 1.15rem;
-}
+    font-size: 1.2rem;
+  }
 
-.treatment_subtitle {
-  padding-top:0.3rem;
-  font-size: 0.85rem;
-}
+  .treatment_subtitle {
+    padding-top: 0.3rem;
+    font-size: 0.85rem;
+  }
 
   .exclusive-services {
     align-items: flex-start;
@@ -807,6 +803,6 @@ figcaption {
 
   .icon-figurecaption {
     font-size: 1rem;
-    color:var(--services-icon-text-gray);
+    color: var(--services-icon-text-gray);
   }
 }
