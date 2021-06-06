@@ -128,7 +128,7 @@ html {
   align-items: center;
   justify-content: center;
   grid-row:3/4;
-
+  align-self:end;
 }
 
 .login-footer-text {
