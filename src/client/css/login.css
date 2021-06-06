@@ -8,15 +8,10 @@ body{
   background: var(--background-blue);
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-
   display:grid;
   grid-template-rows: 20% 60% 20%;
   justify-items: center;
   align-items:center;
-  /* align-self:start; */
 }
 
 html {
@@ -24,7 +19,6 @@ html {
 }
 
 .main-nav{
-  /* position: absolute; */
   align-self: start;
   justify-self:stretch;
   grid-row:1/2;
@@ -32,9 +26,6 @@ html {
 
 .main-container {
   grid-row:2/3;
-
-  /* background: var(--background-blue); */
-  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -120,9 +111,7 @@ html {
 }
 
 #login-footer {
-  /* width: 100%; */
   background: transparent;
-  /* position: absolute; */
   padding:2rem;
   display: flex;
   align-items: center;
@@ -163,9 +152,6 @@ html {
     padding: 7rem 35%;
   }
 
-  #login-footer{
-    /* padding:3rem; */
-  }
 
   .login-footer-icon {
     font-size: 0.85rem;
