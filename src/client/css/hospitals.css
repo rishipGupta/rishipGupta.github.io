@@ -1,0 +1,476 @@
+:root {
+  --hospital-info-container: #d5d5d5;
+  --sortby-gray: #d3d3d3;
+  --hospital-name-blue: #049bff;
+}
+
+.treatments-text {
+  font-size:0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid var(--sortby-gray);
+  border-radius: 2.5rem;
+  /* height:3rem;
+    width: auto; */
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+.hospital-tab-header {
+  display: none;
+}
+
+.hospitals-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.hospitals-list__title {
+  font-size: 1.25rem;
+font-family: "Nexa-Light";
+font-weight: bold;
+}
+
+.sort {
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  justify-content: center;
+  background: var(--sortby-gray);
+}
+
+.hospitals-list__sort {
+  background: var(--hospital-info-container);
+  appearance: none;
+  font-size: 0.8rem;
+  border: 0px;
+  outline: 0px;
+  color: black;
+  font-weight: 800;
+}
+
+.fa-chevron-down {
+  color: black;
+  font-size: 0.6rem;
+}
+.sortby-arrow {
+  display: inline-block;
+}
+
+.hospital-details {
+  border: 1.75px solid var(--sortby-gray);
+  margin-bottom: 1rem;
+}
+
+.horizontal-line {
+  display: block;
+height: 2px;
+width: 2.5rem;
+margin-right: 0.5rem;
+}
+
+.name-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.horizontal-line {
+  color: var(--hospital-name-blue);
+}
+
+.hospital-name {
+  color: var(--hospital-name-blue);
+}
+
+.hospital-info {
+  display: flex;
+  align-items: center;
+}
+
+.hospital-info i {
+  color: var(--hospital-name-blue);
+  padding: 0.5rem 1rem;
+}
+
+.hospital-info div {
+  color: black;
+  font-size: 1rem;
+  font-family: "Nexa-Light";
+  font-weight: 800;
+  /* margin-left:0.5rem; */
+  line-height: 1.5rem;
+}
+
+.call-btn {
+  display: block;
+  margin: 1rem auto;
+  width: auto;
+  font-size: 0.8rem;
+  padding: 0.5rem 4rem;
+}
+
+
+.treatments-description-box {
+  margin-left: 2rem;
+}
+
+.hospital-figure {
+  height: 22rem;
+  width: 100%;
+}
+.hospital-image {
+  object-fit: cover;
+  vertical-align: bottom;
+  object-position: top;
+}
+
+.filterby {
+  display: none;
+}
+
+.aside-container-filter {
+  background: var(--sortby-gray);
+  padding: 1rem;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0 1rem 1rem;
+}
+
+.search-line {
+  width: 1rem;
+  height: 0.2rem;
+  border-radius: 0.5rem;
+  margin:0 1rem;
+  background: var(--sortby-gray);
+}
+.search-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon i{
+  color:var(--hospital-name-blue);
+}
+
+.checkbox-options {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 01rem;
+  margin-bottom: 0.25rem;
+}
+.checkbox-info {
+  margin-right: 1rem;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 1rem 1rem;
+}
+
+.show-more__icon {
+  font-size: 0.5rem;
+  position: absolute;
+  top: 25%;
+}
+
+.show-more__text {
+  margin: 0 1rem;
+}
+
+.category-end-line {
+  width: 100%;
+  color:var(--sortby-gray);
+}
+
+.doc-enquiry {
+  background: #8fcaf1;
+}
+
+.submit-enquiry-btn {
+  background: #0099ff;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+}
+#hospital-footer {
+  background: #010b1d;
+}
+
+#social-media li{
+  margin-bottom:1.5rem;
+}
+
+#footer-services li{
+  margin-bottom:1.5rem;
+}
+
+.follow-us-text {
+  color: #f2f3f3;
+  margin: 2rem auto;
+}
+
+.copyright {
+  margin-top: 2rem;
+}
+
+.copyright-text,
+.copyright-icon {
+  font-size: 0.7rem;
+  color: #3e444c;
+}
+
+.footer-tab {
+  display: none;
+}
+
+.follow-us {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .hospital-details {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .name-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .info-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5rem;
+  }
+
+  .hospital-figure {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100%;
+    width: 100%;
+  }
+
+  .info-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .info-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .info-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .treatments-description-box {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .call-btn {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 1rem;
+  }
+
+  .hospitals-list__title{
+    font-size:1.4rem;
+  }
+  .hospital-info div{
+    font-size:0.95rem;
+  }
+
+  .treatments-text{
+    font-size:0.8rem;
+    padding:0.3rem 0.5rem;
+  }
+
+  #hospital-footer {
+    background: white;
+  }
+  .follow-us-text {
+    display: none;
+  }
+
+  #social-media {
+    display: none;
+  }
+
+  .follow-us {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 64rem) {
+
+  .hospital-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .tab-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .info-container{
+    gap: 0.5rem 3rem;
+  }
+
+  .filterby {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 4rem 0 2rem 0;
+  }
+
+  .hospitals-section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-right: 0;
+  }
+
+  .hospital-tab-header {
+    display: block;
+    position: relative;
+  }
+  .header-img {
+    height: 15rem;
+    width: 100%;
+    background: linear-gradient(
+        rgba(158, 186, 205, 0.9),
+        rgba(158, 186, 205, 0.9)
+      ),
+      url("../assets/images/hospitals/hospital-desktop-bannner.jpg")
+        center/cover;
+  }
+
+  .header-location-text {
+    color: black;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .header-title {
+    position: absolute;
+    top: 50%;
+    left: 6.25rem;
+    font-family:"Nexa-Light"; 
+  }
+
+  .hospitals-list__sort{
+    font-family:"Nexa-Bold";
+    letter-spacing: 0.1rem;
+  }
+  
+  .fa-chevron-down{
+    font-family:"Nexa-Bold";
+  }
+
+  .hospitals-container {
+    padding-bottom: 3rem;
+  }
+
+  .hospitals-section {
+    padding-left: 2rem;
+    padding-bottom: 0;
+  }
+
+  .hospital-figure {
+    justify-self: end;
+    height: 100%;
+    width: 100%;
+  }
+  .hospitals-list {
+    padding: 0;
+    align-items: center;
+  }
+
+  .hospital-info {
+    display: flex;
+    align-items: center;
+  }
+  .hospital-info div {
+    font-size: 0.9rem;
+  }
+
+  .more-treatment-option{
+    background: var(--sortby-gray);
+  }
+
+  .call-btn{
+    padding:0.5rem 2rem;
+  }
+
+  .checkbox-option{
+    font-size:0.8rem;
+    color:#3F3F3F;
+    font-family: "Nexa-Light";
+  }
+
+  .show-more{
+    margin: 0.3rem 1rem;
+  }
+  
+  .show-more__icon {
+    font-size: 0.6rem;
+    color: var(--hospital-name-blue);
+    
+  }
+  
+  .show-more__text {
+    font-size: 0.8rem;;
+    color: var(--hospital-name-blue);
+  }
+
+  .copyright-footer{
+    margin-top:0;
+  }
+}

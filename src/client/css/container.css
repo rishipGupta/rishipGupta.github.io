@@ -1,0 +1,35 @@
+.container{
+    background:var(--blue-container-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-title{
+    color:white;
+  margin-bottom: 1rem;
+}
+
+.container-subtitle{
+    color:#021433;
+    margin-bottom: 1rem;
+}
+
+@media(min-width:64rem){
+    .container{
+        flex-direction:row;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .container-title{
+      margin-bottom: 1.5rem;
+    }
+
+    .container-subtitle{
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+}

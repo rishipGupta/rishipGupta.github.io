@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/container.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <figure class="main-nav__logo">
+        <img src="../assets/images/Logo.jpg" alt="logo" />
+      </figure>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <li>Doctors</li>
+        <li>Hospitals</li>
+        <li>Treatment</li>
+        <li>Other Services</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login/Sign Up</button>
+        <button class="dark-btn main-nav__btn" id="get-quote-btn">
+          Get a Quote
+        </button>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="login-section">
+        <div class="login-title">
+          <h3 class="login-title-text">Login</h3>
+        </div>
+        <div class="login-credentials">
+          <div class="login-credentials__input login-number">
+            <input type="text" class="login-number__input" placeholder="Enter Mobile Number" />
+            <i class="fas fa-question-circle login-number__icon"></i>
+          </div>
+          <div class="login-credentials__input login-otp">
+            <input type="text" class="login-number__input otp-input" placeholder="Enter OTP" />
+          </div>
+          <div class="login-section-btn">
+            <button class="login-btn-text" >LOGIN </button>
+            <i class="fas fa-arrow-right login-btn-arrow"></i>
+          </div>
+          <span class="new-user">Not Registered?</span><a href="#" class="sign-up-link">Sign Up</a>
+        </div>
+      </section>
+    </main>
+    <footer id="login-footer">
+      <h6 class="login-footer-text">All Rights Reserved</h6>
+      <i class="far fa-copyright login-footer-icon"></i>
+      <h6 class="login-footer-text">Tvastra 2020</h6>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+:root {
+  --background-blue: #9cbfda;
+}
+
+/* .main-nav {
+  position: absolute;
+  width: 100%;
+} */
+
+html{
+  /* height:100vh; */
+}  
+
+body{
+  background: var(--background-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container {
+  /* background: var(--background-blue); */
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.login-section {
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+
+.login-title {
+  border-bottom: 2px solid #e2e2e2;
+  padding: 1.5rem;
+}
+
+.login-title-text {
+  color: #1187c5;
+}
+
+.login-credentials {
+  margin: 1rem;
+}
+
+.login-credentials__input {
+  border: 1.5px solid #e2e2e2;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-number__input {
+  width:100%;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.login-number__icon {
+  font-size: 1.25rem;
+  color:#cccccc;
+}
+
+.login-section-btn {
+  background: #2a2d3e;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-btn-text {
+  color: white;
+  letter-spacing: 0.25rem;
+  background: transparent;
+  border: none;
+  margin: auto;
+  padding: 0.5rem 0;
+}
+
+.login-btn-arrow {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.new-user {
+  font-size: 0.85rem;
+  color: #8e7d8a;
+}
+
+.sign-up-link {
+  font-size: 0.85rem;
+  color: #1187c5;
+  margin-left: 0.25rem;
+  font-family: "Nexa-Bold";
+}
+
+#login-footer {
+  /* width: 100%; */
+  background: transparent;
+  /* position: absolute; */
+  padding:3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-footer-text {
+  font-size: 0.75rem;
+}
+
+.login-footer-icon {
+  color: black;
+  margin: 0 0.25rem;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 48rem) and (max-width:64rem) {
+  .main-container {
+    padding: 10rem;
+  }
+
+  #login-footer{
+    padding:3rem;
+  }
+  .login-footer-icon {
+    font-size: 0.75rem;
+  }
+
+  .login-footer-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .main-container {
+    padding: 7rem 35%;
+  }
+
+  #login-footer{
+    padding:3rem;
+  }
+
+  .login-footer-icon {
+    font-size: 0.85rem;
+  }
+
+  .login-footer-text {
+    font-size: 1rem;
+  }
+}

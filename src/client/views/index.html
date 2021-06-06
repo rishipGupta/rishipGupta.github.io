@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/container.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <figure class="main-nav__logo">
+        <img src="../assets/images/Logo.jpg" alt="logo" />
+      </figure>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <li>Doctors</li>
+        <li>Hospitals</li>
+        <li>Treatment</li>
+        <li>Other Services</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login/Sign Up</button>
+        <button class="dark-btn main-nav__btn" id="get-quote-btn">Get a Quote</button>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <h2 class="hero-section__title">Find Affordable Healthcare</h2>
+        <p class="hero-section__subtitle hero-section__description">
+          Join the thousands of others who have exercised their rights to
+          quality healthcare at a price you can afford
+        </p>
+        <form class="hero-section__form" action="#">
+          <!-- <div class="hero-section__inputs"> -->
+          <div class="hero-section__location gps">
+            <i class="fas fa-map-marker-alt location-icon"></i>
+            <input
+              class="location-input search-location"
+              type="text"
+              placeholder="Ahemdabad"
+            />
+            <figure class="location-gps">
+              <img class="gps-image" src="../assets/images/location_gps.png" />
+            </figure>
+          </div>
+          <div class="hero-section__location assistance">
+            <input
+              class="location-input"
+              type="text"
+              placeholder="Search for Doctor, hospitals and treatments"
+            />
+          </div>
+          <!-- </div> -->
+          <button class="dark-btn" id="hero-section__btn">Search</button>
+        </form>
+      </section>
+      <section class="how-it-works">
+        <h2 class="hero-section__title">How it works</h2>
+        <p class="hero-section__subtitle how-it-works-section__description">
+          Various facilities are provided here. But there is a protocol which
+          needs to be followed so that you get the service at its best.
+        </p>
+
+        <p class="dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+        <div class="how-it-works__services">
+          <ul class="how-it-works__service fix-consultation-block">
+            <li class="service-number servicenum-01">01</li>
+            <li class="service-tag service-01">Fix Consultation</li>
+          </ul>
+          <div class="service-imageBlock">
+            <figure class="service-image">
+              <img src="../assets/images/clinicimg1.png" alt="" />
+            </figure>
+            <h5 class="service-image__title">Fix Consultation</h5>
+            <!-- <p class="service-image__subtitle"> -->
+            <p class="service-image__subtitle">
+              This depicts that the user will have to fix appointment first when
+              it selects a particular doctor.
+            </p>
+          </div>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-02">02</li>
+            <li class="service-tag service-02">Upload Medical Records</li>
+          </ul>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-03">03</li>
+            <li class="service-tag service-03">Consult with doctor</li>
+          </ul>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-04">04</li>
+            <li class="service-tag service-04">Fix Surgery</li>
+          </ul>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-05">05</li>
+            <li class="service-tag service-05">Hospital sent estimates</li>
+          </ul>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-06">06</li>
+            <li class="service-tag service-06">Payment</li>
+          </ul>
+          <ul class="how-it-works__service">
+            <li class="service-number servicenum-07">07</li>
+            <li class="service-tag service-07">Surgery Completed</li>
+          </ul>
+        </div>
+      </section>
+      <section class="doctors">
+        <h2 class="hero-section__title doctors-title">
+          World Class Expert Doctors!
+        </h2>
+        <p class="hero-section__subtitle doctors-subtitle">
+          The university of Texas Southeastern Medical center has been a long
+          world-renowned research hospital. But untill the 80's, you couldn't go
+          there. Now, with the addition of Aston Center and Zale Lipshy
+          Hospital. UT Southeastern is also a mecca for patients.
+        </p>
+
+        <p class="dummy-text doctors__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+
+        <article class="doctors-block">
+          <figure class="doctorImage-section">
+            <figure class="doctor-image">
+              <img src="../assets/images/doctor1image--002.jpg" alt="" />
+            </figure>
+            <div class="doctor-name">
+              <span class="horizontal-line"></span>
+              <figcaption class="name">Duke Sanson</figcaption>
+            </div>
+            <div class="doctors-details">
+              <figcaption class="doctor-detail">Neuro Surgeon</figcaption>
+              <figcaption class="doctor-detail">
+                Chain Department of Neurological Surgery
+              </figcaption>
+              <figcaption class="doctor-detail">Australia</figcaption>
+            </div>
+          </figure>
+          <figure class="doctorImage-section">
+            <figure class="doctor-image">
+              <img src="../assets/images/doctor3image--004.jpg" alt="" />
+            </figure>
+            <div class="doctor-name">
+              <span class="horizontal-line"></span>
+              <figcaption class="name">Georgia Peter</figcaption>
+            </div>
+            <div class="doctors-details">
+              <figcaption class="doctor-detail">
+                Breast Cancer Surgeon
+              </figcaption>
+              <figcaption class="doctor-detail">
+                Director. UT. Southwest
+              </figcaption>
+              <figcaption class="doctor-detail">London</figcaption>
+            </div>
+          </figure>
+
+          <figure class="doctorImage-section">
+            <figure class="doctor-image">
+              <img src="../assets/images/doctor4image--005.jpg" alt="" />
+            </figure>
+            <div class="doctor-name">
+              <span class="horizontal-line"></span>
+              <figcaption class="name">Charlie Moon</figcaption>
+            </div>
+            <div class="doctors-details">
+              <figcaption class="doctor-detail">Cardiac Surgeon</figcaption>
+              <figcaption class="doctor-detail">
+                MBBS. MD. FRCP. MRCP. Fellowship
+              </figcaption>
+              <figcaption class="doctor-detail">New Delhi, India</figcaption>
+            </div>
+          </figure>
+          <figure class="doctorImage-section">
+            <figure class="doctor-image">
+              <img src="../assets/images/doctor2image--003.jpg" alt="" />
+            </figure>
+            <div class="doctor-name">
+              <span class="horizontal-line"></span>
+              <figcaption class="name">Rose Moon</figcaption>
+            </div>
+            <div class="doctors-details">
+              <figcaption class="doctor-detail">Plastic Surgeon</figcaption>
+              <figcaption class="doctor-detail">
+                Department of Plastic and Reconstructive Surgery
+              </figcaption>
+              <figcaption class="doctor-detail">Dubai</figcaption>
+            </div>
+          </figure>
+        </article>
+        <div class="doctors-toggle">
+          <div class="doctors-toggle__button highlited-toggle__button"></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+        </div>
+      </section>
+
+      <section class="treatments">
+        <h2 class="hero-section__title">Featured Medical Treatment</h2>
+        <p class="hero-section__subtitle treatments__description">
+          Join the thousands of others who have exercised their rights to
+          quality healthcare at a price you can afford
+        </p>
+
+        <p class="dummy-text treatments__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+
+        <article class="treatments-images">
+          <figure class="treatments__image-block dentistry">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image "
+              src="../assets/images/dentinstimage--009.jpg"
+              alt="dentistry"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Dentistry</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+          <figure class="treatments__image-block cancer">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image"
+              src="../assets/images/cancer_image.jpg"
+              alt="cancer"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Cancer</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+          <figure class="treatments__image-block cardiology">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image"
+              src="../assets/images/cardiological_image.jpg"
+              alt="cardiological treatment"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Cardiological Treatment</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+          <figure class="treatments__image-block multiorgan">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image"
+              src="../assets/images/multiorgan_image.jpg"
+              alt="Multi Organ Transplant"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Multi Organ Transplant</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+          <figure class="treatments__image-block orthopedics">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image"
+              src="../assets/images/orthopedics_image.jpg"
+              alt="Orthopedics Surgery"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Orthopedics Surgery</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+          <figure class="treatments__image-block infertility">
+            <div class="backdrop"></div>
+            <img
+              class="treatment-image"
+              src="../assets/images/infertility_image.jpg"
+              alt="Infertility Treatment"
+            />
+            <div class="treatment_image-text">
+              <h6 class="treatment_title">Infertility Treatment</h6>
+              <p class="treatment_subtitle">50+ Specialists</p>
+            </div>
+          </figure>
+        </article>
+        <div class="doctors-toggle">
+          <div class="doctors-toggle__button highlited-toggle__button"></div>
+          <div class="doctors-toggle__button "></div>
+          <div class="doctors-toggle__button "></div>
+        </div>
+      </section>
+      <section class="exclusive-services">
+        <h2 class="hero-section__title">Exclusive services</h2>
+        <p class="hero-section__subtitle exclusive-services__subtitle">
+          We want you to be comfortable and thus apart from threating you
+          illness, we provide you with other services that you can see
+        </p>
+
+        <p class="dummy-text services__dummy-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rem
+          quae architecto, beatae veritatis quod maiores autem blanditiis
+          tenetur aut culpa voluptatum consectetur itaque tempora repellat atque
+          earum. Inventore, debitis.
+        </p>
+        <div class="exclusive-services__icons">
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img src="../assets/images/travel.png" alt="travel" />
+            </figure>
+            <figcaption class="icon-figurecaption">TRAVEL</figcaption>
+          </figure>
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img src="../assets/images/food.png" alt="food" />
+            </figure>
+            <figcaption class="icon-figurecaption">FOOD</figcaption>
+          </figure>
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img src="../assets/images/accomodation.png" alt="accomodation" />
+            </figure>
+            <figcaption class="icon-figurecaption">ACCOMODATION</figcaption>
+          </figure>
+
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img src="../assets/images/labs.png" alt="labs" />
+            </figure>
+            <figcaption class="icon-figurecaption">LABS</figcaption>
+          </figure>
+
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img src="../assets/images/reports.png" alt="reports" />
+            </figure>
+            <figcaption class="icon-figurecaption">REPORTS</figcaption>
+          </figure>
+
+          <figure class="exclusive-services__icon">
+            <figure class="icon-figure">
+              <img
+                src="../assets/images/ambulanceIcons-06.png"
+                alt="ambulance"
+              />
+            </figure>
+            <figcaption class="icon-figurecaption">AMBULANCE</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="container__text">
+          <h2 class="container-title">Need help?</h2>
+          <p class="container-subtitle">
+            Just let us know, we wil happy to assist you
+          </p>
+        </div>
+        <button class="light-btn submit-enquiry-btn">Submit your enquiry</button>
+      </section>
+      <footer class="footer">
+        <div class="footer-tabview">
+          <figure class="footer-logo">
+            <img src="../assets/images/logoFooter.png" alt="" />
+          </figure>
+          <ul>
+            <li>Doctor</li>
+            <li>Hospital</li>
+            <li>Treatment</li>
+            <li>Other Services</li>
+            <li>FAQs</li>
+          </ul>
+        </div>
+        <div class="footer-tabview copyright-footer">
+          <div class="follow-us">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="copyright">
+            <h6 class="copyright-text">All Rights Reserved.</h6>
+            <i class="far fa-copyright copyright-icon"></i>
+            <h6 class="copyright-text">tvastra 2018</h6>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="stylesheet" href="../css/container.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Signup</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <figure class="main-nav__logo">
+        <img src="../assets/images/Logo.jpg" alt="logo" />
+      </figure>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <li>Doctors</li>
+        <li>Hospitals</li>
+        <li>Treatment</li>
+        <li>Other Services</li>
+        <li>About</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login / Sign Up</button>
+        <button class="dark-btn main-nav__btn" id="get-quote-btn">
+          Get a Quote
+        </button>
+      </div>
+    </nav>
+    <main class="main-container">
+      <section class="signup-section">
+        <div class="signup-title">
+          <h3 class="signup-title-text">Sign up</h3>
+        </div>
+        <div class="signup-credentials">
+          <div class="signup-credentials-item signup-number">
+            <input type="text" class="signup-item-input" placeholder="Enter Name" />
+          </div>
+          <div class="signup-credentials-item ">
+            <input type="text" class="signup-item-input" placeholder="Enter Email" />
+          </div>
+          <div class="signup-credentials-item">
+            <input type="text" class="signup-item-input" placeholder="Enter Password" />
+          </div>
+          <select class="select-options signup-credentials-item" name="gender" id="select-gender">
+              <option value="Select your gender">
+                  Select your gender
+              </option>
+          </select>
+        <div class="signup-credentials-item">
+            <input type="text" class="signup-item-input" placeholder="dd / mm / yyyy" />
+          </div>
+          <div class="signup-credentials-item">
+            <input type="text" class="signup-item-input" placeholder="Enter Phone Number" />
+          </div>
+          <div class="city-state-input">
+              <div class="signup-credentials-item city-state-input-div">
+                <input type="text" class="signup-item-input" placeholder="Enter City" />
+              </div>
+              <div class="signup-credentials-item city-state-input-div">
+                <input type="text" class="signup-item-input" placeholder="Enter State" />
+              </div>
+          </div>
+          <select class="select-options signup-credentials-item" name="gender" id="select-gender">
+            <option value="Select your country">
+                Select your Country
+            </option>
+        </select>
+      <div>
+          <div class="signup-section-btn">
+            <button class="signup-btn-text" >SIGN UP </button>
+            <i class="fas fa-arrow-right signup-btn-arrow"></i>
+          </div>
+          <span class="new-user">Already Registered?</span><a href="#" class="sign-up-link">Login</a>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer id="signup-footer">
+      <h6 class="signup-footer-text">All Rights Reserved</h6>
+      <i class="far fa-copyright signup-footer-icon"></i>
+      <h6 class="signup-footer-text">Tvastra 2020</h6>
+    </footer>
+    
+  </body>
+</html>

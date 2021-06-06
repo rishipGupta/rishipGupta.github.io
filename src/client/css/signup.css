@@ -1,0 +1,163 @@
+:root {
+    --background-blue: #9cbfda;
+  }
+
+  html{
+    height:100vh;
+  }  
+
+  body{
+    height: 100vh;
+    background: var(--background-blue);
+  }
+  
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 1.5rem 4rem 1.5rem;
+  }
+  
+
+  .signup-section {
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .signup-title {
+    border-bottom: 2px solid #e2e2e2;
+    padding: 1.5rem;
+  }
+  
+  .signup-title-text {
+    color: #1187c5;
+  }
+  
+  .signup-credentials {
+    margin: 1rem;
+  }
+  
+  .signup-credentials-item {
+    border: 1.5px solid #e2e2e2;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .signup-item-input {
+    width:100%;
+    border: none;
+    font-size: 0.8rem;
+  }
+  
+  .city-state-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .city-state-input-div{
+    width:49%;
+  }
+
+  .select-options{
+    width: 100%;
+    font-size:0.8rem;
+    color:#8e8e9a;
+  }
+  .signup-section-btn {
+    background: #2a2d3e;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .signup-btn-text {
+    color: white;
+    letter-spacing: 0.25rem;
+    background: transparent;
+    border: none;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  
+  .signup-btn-arrow {
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  .new-user {
+    font-size: 0.85rem;
+    color: #8e7d8a;
+  }
+  
+  .sign-up-link {
+    font-size: 0.85rem;
+    color: #1187c5;
+    margin-left: 0.25rem;
+    font-family: "Nexa-Bold";
+  }
+  
+  #signup-footer {
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-footer-text {
+    font-size: 0.75rem;
+    flex-wrap: nowrap;
+  }
+  
+  .signup-footer-icon {
+    color: black;
+    margin: 0 0.25rem;
+    font-size: 0.5rem;
+  }
+  
+
+
+  @media (min-width: 48rem)and (max-width:64rem) {
+    .main-container {
+      padding:10rem;
+    }
+  
+    #signup-footer{
+      padding-bottom:3rem;
+    }
+    .signup-footer-icon {
+      font-size: 0.75rem;
+    }
+  
+    .signup-footer-text {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (min-width: 64rem) {
+    .main-container {
+      padding: 7rem 35%;
+    }
+
+    #signup-footer{
+      padding-bottom:3rem;
+    }
+    .signup-footer-icon {
+      font-size: 0.85rem;
+    }
+  
+    .signup-footer-text {
+      font-size: 1rem;
+    }
+  }
+  
