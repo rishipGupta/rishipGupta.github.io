@@ -14,6 +14,8 @@ body{
 
   display:grid;
   grid-template-rows: 20% 60% 20%;
+  justify-items: center;
+  align-items:center;
   /* align-self:start; */
 }
 
@@ -24,6 +26,7 @@ html {
 .main-nav{
   /* position: absolute; */
   align-self: start;
+  justify-self:stretch;
   grid-row:1/2;
 }
 
@@ -161,7 +164,7 @@ html {
   }
 
   #login-footer{
-    padding:3rem;
+    /* padding:3rem; */
   }
 
   .login-footer-icon {
