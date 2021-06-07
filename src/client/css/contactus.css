@@ -1,0 +1,30 @@
+.contact-us-header-figure{
+    height: 18rem;
+    width: 100%;
+}
+
+.contact-us-header-img{
+    object-fit: cover;
+}
+
+.contact-us-header{
+    position: relative;
+}
+
+.contact-us-header-text{
+    position: absolute;
+    top:33%;
+    left:22%;
+    text-align: center;
+}
+
+.contact-us-header-title{
+    /* font-size:1.9rem; */
+    color:white;
+    padding-bottom:1.3rem;
+}
+
+.contact-us-header-subtitle{
+    color:white;
+    /* font-size:1;    */
+}
