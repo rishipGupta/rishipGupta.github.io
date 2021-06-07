@@ -160,4 +160,9 @@
   #contact-us-footer {
     background: white;
   }
+
+  #contact-us-follow-us i {
+    font-size: 1.2rem;
+    padding: 1rem 0 1rem 0.4rem;
+  }
 }
