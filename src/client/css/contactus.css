@@ -19,12 +19,40 @@
 }
 
 .contact-us-header-title{
-    /* font-size:1.9rem; */
     color:white;
     padding-bottom:1.3rem;
 }
 
 .contact-us-header-subtitle{
     color:white;
-    /* font-size:1;    */
+}
+
+.contact-us-address-section{
+    padding-bottom:1rem;
+}
+
+.contact-us-address-info-box{
+    padding:1rem 1rem 0 1rem;
+}
+
+.address-info-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:1rem;
+}
+
+.address-info-container i{
+    font-size:1.3rem;
+    color:#0173B2;
+    padding-right:1rem;
+}
+
+.address-main-info-text{
+    font-size:1rem;
+}
+
+.address-sub-info-text{
+    padding-top:0.5rem;
+    font-size:0.75rem;
 }
