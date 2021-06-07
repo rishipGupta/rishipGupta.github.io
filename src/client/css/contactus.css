@@ -37,7 +37,7 @@
 }
 
 .contact-us-address-info-box {
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem;
 }
 
 .address-info-container {
@@ -50,7 +50,7 @@
 .address-info-container i {
   font-size: 1.3rem;
   color: #0173b2;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 
 .address-main-info-text {
@@ -110,10 +110,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .contact-us-address-info-box {
-    padding: 1rem 0 0 0;
+    padding: 1rem 2rem;
   }
 
   .address-sub-info-text {
@@ -121,7 +118,7 @@
   }
 
   .address-info-container i {
-    padding-right: 0.7rem;
+    padding: 0 0.7rem 0 0;
   }
 
   .name-input {
