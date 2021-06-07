@@ -68,3 +68,21 @@
     margin-bottom:0.5rem;
 }
 
+#contact-us-footer{
+    background: #2A2D3E;
+}
+
+#contact-us-footer-list li{
+    font-size:0.9rem;
+    padding-top:0.2rem;
+}
+
+
+#contact-us-follow-us i{
+    font-size:1.2rem;
+    padding: 1rem 0.4rem 1rem 0.4rem;
+}
+
+#contact-us-copyright{
+    /* padding-top:1rem; */
+}
