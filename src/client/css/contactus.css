@@ -56,3 +56,15 @@
     padding-top:0.5rem;
     font-size:0.75rem;
 }
+
+.enquiry-box{
+    background:#9CBFDA ;
+    padding:1rem;
+}
+
+.enquiry-box-input{
+    padding:0.5rem;
+    width: 100%;
+    margin-bottom:0.5rem;
+}
+

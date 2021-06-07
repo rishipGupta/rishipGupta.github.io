@@ -103,6 +103,13 @@ button {
   padding: 1rem 2.5rem;
 }
 
+.enquiry-box-btn{
+  display:block;
+  width:auto;
+  border-radius: 0;
+  margin-left:auto;
+}
+
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
