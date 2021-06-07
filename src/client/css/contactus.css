@@ -1,88 +1,163 @@
-.contact-us-header-figure{
-    height: 18rem;
+.contact-us-header-figure {
+  height: 18rem;
+  width: 100%;
+}
+
+.contact-us-header-img {
+  object-fit: cover;
+}
+
+.contact-us-header {
+  position: relative;
+}
+
+.contact-us-header-text {
+  position: absolute;
+  top: 33%;
+  left: 22%;
+  text-align: center;
+}
+
+.contact-us-header-title {
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.contact-us-header-subtitle {
+  color: white;
+}
+
+.contact-us-address-section {
+  padding: 1rem;
+}
+
+.contact-us-address-map {
+  height: 15rem;
+  width: 100%;
+}
+
+.contact-us-address-info-box {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.address-info-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.address-info-container i {
+  font-size: 1.3rem;
+  color: #0173b2;
+  padding-right: 1rem;
+}
+
+.address-main-info-text {
+  font-size: 1rem;
+}
+
+.address-sub-info-text {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.enquiry-box {
+  background: #9cbfda;
+  padding: 1rem;
+}
+
+.enquiry-box-input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+#contact-us-footer {
+  background: #2a2d3e;
+}
+
+#contact-us-footer-list li {
+  font-size: 0.9rem;
+  padding-top: 0.2rem;
+}
+
+#contact-us-follow-us i {
+  font-size: 1.2rem;
+  padding: 1rem 0.4rem 1rem 0.4rem;
+}
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .contact-us-header-text {
+    top: 36%;
+    left: 28%;
+  }
+
+  .contact-us-header-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-us-address-section {
+    padding: 1rem 2rem;
+  }
+
+  .contact-us-address-map {
+    height: 25rem;
     width: 100%;
-}
+  }
 
-.contact-us-header-img{
-    object-fit: cover;
-}
-
-.contact-us-header{
-    position: relative;
-}
-
-.contact-us-header-text{
-    position: absolute;
-    top:33%;
-    left:22%;
-    text-align: center;
-}
-
-.contact-us-header-title{
-    color:white;
-    padding-bottom:1.3rem;
-}
-
-.contact-us-header-subtitle{
-    color:white;
-}
-
-.contact-us-address-section{
-    padding:1rem;
-}
-
-.contact-us-address-info-box{
-    padding:1rem 1rem 0 1rem;
-}
-
-.address-info-container{
+  .contact-us-address-info-box {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding-top:1rem;
-}
+  }
 
-.address-info-container i{
-    font-size:1.3rem;
-    color:#0173B2;
-    padding-right:1rem;
-}
+  .contact-us-address-info-box {
+    padding: 1rem 0 0 0;
+  }
 
-.address-main-info-text{
-    font-size:1rem;
-}
+  .address-sub-info-text {
+    font-size: 0.8rem;
+  }
 
-.address-sub-info-text{
-    padding-top:0.5rem;
-    font-size:0.75rem;
-}
+  .address-info-container i {
+    padding-right: 0.7rem;
+  }
 
-.enquiry-box{
-    background:#9CBFDA ;
-    padding:1rem;
-}
+  .name-input {
+    grid-area: name;
+  }
 
-.enquiry-box-input{
-    padding:0.5rem;
-    width: 100%;
-    margin-bottom:0.5rem;
-}
+  .message-input {
+    grid-area: message;
+  }
 
-#contact-us-footer{
-    background: #2A2D3E;
-}
+  .email-input {
+    grid-area: email;
+  }
 
-#contact-us-footer-list li{
-    font-size:0.9rem;
-    padding-top:0.2rem;
-}
+  .subject-input {
+    grid-area: subject;
+  }
 
+  .send-message-btn {
+    grid-area: send-message-button;
+  }
 
-#contact-us-follow-us i{
-    font-size:1.2rem;
-    padding: 1rem 0.4rem 1rem 0.4rem;
-}
+  .enquiry-box {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 0.5rem;
+    grid-template-areas:
+      "name message"
+      "email message"
+      "subject message"
+      ". send-message-button";
+  }
 
-#contact-us-copyright{
-    /* padding-top:1rem; */
+  #contact-us-footer {
+    background: white;
+  }
 }
