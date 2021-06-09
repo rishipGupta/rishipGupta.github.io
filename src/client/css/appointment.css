@@ -1,0 +1,144 @@
+:root{
+    --background-blue:#9BBED9;
+    --appointment-title-blue:#297AB6;
+    --title-border-bottom-gray:#D6D6D6;
+    --label-color-gray:#656565;
+    --date-selector-input-gray:#919191;
+}
+
+body{
+    /* min-height: 100vh; */
+    /* display:grid;
+    grid-template-rows: 10% 80% 10%;
+    justify-items: center;
+    align-items:center; */
+}
+
+/* .main-nav{
+    align-self: start;
+    justify-self:stretch;
+    grid-row:1/2;
+} */
+
+.main-container {
+    background: var(--background-blue);
+    /* grid-row:2/3; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.75rem 1rem;
+  }
+
+  .appointment-title{
+      text-align: center;
+      padding:1rem;
+      border-bottom: 1px solid var(--title-border-bottom-gray);
+  }
+
+  .appointment-title-text{
+      color:var(--appointment-title-blue);
+      font-size:1.2rem;
+  }
+
+  .appointment-section {
+    background: white;
+    width: 100%;
+    text-align: left;
+    align-self: start;
+    padding:0;
+  }
+
+  .appointment-form{
+      padding:1rem;
+  }
+
+  .appointment-form-info-containers{
+      padding-bottom:1rem;
+  }
+
+  .appointment-form-info-title{
+      margin-bottom:0.5rem;
+      font-size:0.9rem;
+  }
+
+  .date-selector-input{
+      width: 100%;
+      padding:0.5rem 1rem;
+      font-size:0.8rem;
+      font-family: "Nexa-Bold";
+      border:0.15rem solid var(--date-selector-input-gray);
+      color:var(--date-selector-input-gray);
+  }
+
+  .radio-input-container{
+      display:flex;
+      align-items: center;
+  }
+
+  .radio-input{
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        background: #DEDEDE;
+        border:1.5px solid #B4B4B4;
+        margin-right: 1rem;
+  }
+
+  .info-label{
+      font-size:0.75rem;
+      color:var(--label-color-gray)
+  }
+
+  .choose-file-indicator{
+      color:black;
+      padding-left:0.25rem;
+  }
+
+  #details-text-box{
+      width: 100%;
+  }
+
+  
+  
+  .appointment-btn-text {
+    color: white;
+    letter-spacing: 0.25rem;
+    background: transparent;
+    border: none;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  
+  .appointment-btn-arrow {
+    color: white;
+    margin-right: 0.5rem;
+  }
+
+  #appointment-footer {
+    background: var(--background-blue);
+    padding-top:0;
+    padding-bottom:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* grid-row:3/4; */
+    align-self:end;
+  }
+
+  .appointment-footer-text{
+      font-size:0.7rem;
+  }
+
+  #appointment-footer-icon{
+      font-size:0.5rem;
+      color:var(--dark-primary-blue);
+      padding:0 0.15rem;
+      /* font-family: "Nexa-Bold"; */
+  }
+  
+
+  
+
