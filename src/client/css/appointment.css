@@ -7,7 +7,7 @@
 }
 
 body{
-    /* min-height: 100vh; */
+    height: 100vh;
     /* display:grid;
     grid-template-rows: 10% 80% 10%;
     justify-items: center;
@@ -136,7 +136,6 @@ body{
       font-size:0.5rem;
       color:var(--dark-primary-blue);
       padding:0 0.15rem;
-      /* font-family: "Nexa-Bold"; */
   }
   
 
