@@ -110,6 +110,24 @@ button {
   margin-left:auto;
 }
 
+.choose-file-btn{
+  font-size: 0.75rem;
+  padding:0.06rem 0.5rem;
+  border-radius:0.2rem;
+  color:black;
+  border-color: #AEAEAE;
+  background-color: #EFEFEF;
+}
+
+.appointment-section-btn {
+  background: #2a2d3e;
+  padding: 0.4rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
