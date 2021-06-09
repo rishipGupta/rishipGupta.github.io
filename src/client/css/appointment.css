@@ -6,23 +6,8 @@
     --date-selector-input-gray:#919191;
 }
 
-body{
-    /* height: 100vh; */
-    /* display:grid;
-    grid-template-rows: 10% 80% 10%;
-    justify-items: center;
-    align-items:center; */
-}
-
-/* .main-nav{
-    align-self: start;
-    justify-self:stretch;
-    grid-row:1/2;
-} */
-
 .main-container {
     background: var(--background-blue);
-    /* grid-row:2/3; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -124,7 +109,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* grid-row:3/4; */
     align-self:end;
   }
 
@@ -137,6 +121,18 @@ body{
       color:var(--dark-primary-blue);
       padding:0 0.15rem;
   }
+
+  @media (min-width: 48rem) and (max-width:64rem) {
+      .main-container{
+          padding:6rem;
+      }
+  }
+
+  @media(min-width:64rem) {
+    .main-container{
+        padding:8rem 28rem;;
+    }
+}
   
 
   
