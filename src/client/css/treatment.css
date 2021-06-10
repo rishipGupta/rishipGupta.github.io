@@ -217,20 +217,19 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-bottom:0.5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
-  border-radius:0.8rem;
+  border-radius: 0.8rem;
 }
 .treatment-fig {
   height: 12rem;
   width: 100%;
-  border-radius:0.8rem 0.8rem 0 0;
-
+  border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .treatment-img {
   object-fit: cover;
-  border-radius:0.8rem 0.8rem 0 0;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .treatment-name-container {
@@ -240,8 +239,7 @@
   padding: 2rem 0;
   background: white;
   width: 100%;
-  border-radius:0  0 0.8rem 0.8rem;
-
+  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .treatment-name {
@@ -251,16 +249,142 @@
 }
 
 #treatment-footer {
-    background: #2a2d3e;
+  background: #2a2d3e;
+}
+
+#treatment-footer-list li {
+  font-size: 0.9rem;
+  padding-top: 0.2rem;
+}
+
+#treatment-follow-us i {
+  font-size: 1.2rem;
+  padding: 1rem 0.4rem 1rem 0.4rem;
+}
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .dentist-hero-section {
+    height: 16.5rem;
+    width: 100%;
+    background: linear-gradient(to right, rgb(7, 118, 179), transparent),
+      url("../assets/images/dentistry/dentist_hero_image.jpg") top/cover;
+    position: relative;
   }
-  
-  #treatment-footer-list li {
+
+  .dentist-header-text {
+    top: 34%;
+    left: 38%;
+  }
+
+  .dentist-header-title {
+    font-size: 2.4rem;
+  }
+
+  .vaccination-section-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .dentist-department {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: start;
+    align-items: start;
+  }
+
+  .dentist-treatment-figure-container {
+    grid-column: 1/2;
+    height: 100%;
+  }
+
+  .dentist-treatment-figure {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dentist-treatment-image {
+    object-fit: cover;
+  }
+
+  .dentist-treatment-info-container {
+    grid-column: 2/3;
+    padding-left: 1.25rem;
+  }
+
+  .dentist-treatment-info-title {
+    padding-top: 0;
+    font-size: 1.35rem;
+  }
+  .dentist-treatment-info-description {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .list-bullent-point {
+    height: 0.35rem;
+    width: 0.35rem;
+  }
+
+  .dentist-treatment-info-list__item {
+    font-size: 1.1rem;
+    padding: 1rem 0 0 0;
+  }
+
+  .visitation-container{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 1rem;
+  }
+
+  .visitation-info-title{
+    font-size: 1.13rem;
+  }
+
+  .visitation-info-description {
     font-size: 0.9rem;
-    padding-top: 0.2rem;
+}
+
+.service-schedule-main-container{
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    grid-template-columns: repeat(2,50%);
+    margin:1rem 2rem 2rem 2rem;
+}
+
+.service-cum-schedule{
+    margin:0 1rem 0 0;
+    justify-self: stretch;
+}
+
+.schedule-container{
+    margin:0;
+}
+
+.more-services-header{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.more-services-title{
+    font-size: 1.8rem;
+}
+
+.treatment-figure-container{
+    flex-direction: row;
+}
+
+.cancer-info-container{
+    margin:0 0.6rem;
+}
+
+#treatment-footer {
+    background: white;
   }
-  
+
   #treatment-follow-us i {
     font-size: 1.2rem;
-    padding: 1rem 0.4rem 1rem 0.4rem;
+    padding: 1rem 0 1rem 0.4rem;
   }
-  
+}
