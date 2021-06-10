@@ -128,6 +128,15 @@ button {
   align-items: center;
 }
 
+#treatment-page-nav-btn{
+  font-size:1.2rem;
+}
+
+#treatment-page-getquote-btn{
+  font-size:1.2rem;
+  margin-left:0.5rem;
+}
+
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
