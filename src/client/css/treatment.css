@@ -219,14 +219,18 @@
   justify-content: center;
   margin-bottom:0.5rem;
   width: 100%;
+  border-radius:0.8rem;
 }
 .treatment-fig {
-  height: 15rem;
+  height: 12rem;
   width: 100%;
+  border-radius:0.8rem 0.8rem 0 0;
+
 }
 
 .treatment-img {
   object-fit: cover;
+  border-radius:0.8rem 0.8rem 0 0;
 }
 
 .treatment-name-container {
@@ -236,6 +240,8 @@
   padding: 2rem 0;
   background: white;
   width: 100%;
+  border-radius:0  0 0.8rem 0.8rem;
+
 }
 
 .treatment-name {
@@ -243,3 +249,18 @@
   font-family: "Nexa-Bold";
   color: black;
 }
+
+#treatment-footer {
+    background: #2a2d3e;
+  }
+  
+  #treatment-footer-list li {
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+  }
+  
+  #treatment-follow-us i {
+    font-size: 1.2rem;
+    padding: 1rem 0.4rem 1rem 0.4rem;
+  }
+  
