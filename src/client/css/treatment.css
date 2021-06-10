@@ -1,0 +1,245 @@
+:root {
+  --vaccination-info-text-gray: #5a5a5a;
+}
+
+.dentist-hero-section {
+  height: 15.5rem;
+  width: 100%;
+  background: linear-gradient(to right, rgb(7, 118, 179), transparent),
+    url("../assets/images/dentistry/dentist_hero_image.jpg") left/cover;
+  position: relative;
+}
+
+.dentist-header-text {
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  text-align: center;
+}
+
+.dentist-header-title {
+  color: white;
+  font-size: 1.8rem;
+  padding-bottom: 1.5rem;
+}
+
+.dentist-header-subtitle {
+  color: white;
+}
+
+.vaccination-section {
+  text-align: center;
+}
+
+.vaccination-section-title {
+  margin-bottom: 1.5rem;
+}
+
+.dentist-treatment-figure {
+  height: 18rem;
+}
+
+.dentist-treatment-image {
+  object-fit: cover;
+}
+
+.dentist-treatment-info-container {
+  text-align: left;
+  /* padding-bottom:1.5rem; */
+}
+
+.dentist-treatment-info-description {
+  color: var(--vaccination-info-text-gray);
+  font-size: 0.85rem;
+  padding-bottom: 1.5rem;
+}
+
+.dentist-treatment-info-title {
+  padding: 1.5rem 0;
+}
+
+.dentist-treatment-info-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--vaccination-info-text-gray);
+  font-size: 0.85rem;
+  padding-bottom: 1rem;
+}
+
+.list-bullent-point {
+  height: 0.25rem;
+  width: 0.25rem;
+  background: #0173b2;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.visitation-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.visitation-icon-background {
+  height: 4rem;
+  width: 4rem;
+  background: #cce3f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-stethoscope,
+.fa-tablets,
+.fa-heartbeat {
+  color: #2a2d3e;
+  font-size: 1.5rem;
+}
+
+.visitation-info-title {
+  padding: 1rem;
+}
+
+.visitation-info-description {
+  font-size: 0.8rem;
+}
+
+.service-cum-schedule {
+  border: 2px solid #eeeeee;
+  margin: 2rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-title-container {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.horizontal-line {
+  display: block;
+  height: 0.15rem;
+  width: 1.2rem;
+  margin: 0 0.3rem 0 0;
+  /* margin-right: 0.5rem; */
+}
+
+.service-title {
+  font-size: 1rem;
+}
+
+.service-info-main-container {
+  padding: 0 1.5rem;
+}
+
+.service-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.service-info-description {
+  font-size: 0.8rem;
+  font-family: "Nexa-Bold";
+}
+
+.service-category {
+  color: #464a5a;
+}
+
+.service-category-info {
+  color: #858388;
+}
+
+.schedule-container {
+  margin-top: 0;
+}
+
+.more-services {
+  background: #8cb9db;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.more-services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.more-services-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.25rem;
+}
+
+.toggle-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.toggle-background {
+  height: 2rem;
+  width: 2rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  color: #464a5a;
+}
+
+.treatment-figure-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.treatmentImage-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom:0.5rem;
+  width: 100%;
+}
+.treatment-fig {
+  height: 15rem;
+  width: 100%;
+}
+
+.treatment-img {
+  object-fit: cover;
+}
+
+.treatment-name-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  background: white;
+  width: 100%;
+}
+
+.treatment-name {
+  font-size: 1.2rem;
+  font-family: "Nexa-Bold";
+  color: black;
+}
