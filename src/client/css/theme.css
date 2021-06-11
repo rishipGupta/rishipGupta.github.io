@@ -137,6 +137,15 @@ button {
   margin-left:0.5rem;
 }
 
+#checkup-btn{
+  font-family: "Nexa-Bold";
+}
+
+#career-enquiry-btn{
+  background-color:#0173B2;
+  font-family: "Nexa-Bold";
+}
+
 h1 {
   font-family: "Nexa-Bold";
   font-size: 2rem;
@@ -325,6 +334,11 @@ footer {
     width: auto;
   }
 
+  #career-enquiry-btn{
+    padding: 1rem 1.5rem;
+font-size: 1rem;
+  }
+
   h1 {
     font-size: 2rem;
     line-height: 1.8rem;
@@ -388,6 +402,11 @@ footer {
     padding: 0.5rem 0.8rem;
     font-size: 0.85rem;
   }
+
+  #checkup-btn{
+    font-size: 1rem;
+    font-family: "Nexa-Bold";
+  }
 }
 
 /* Desktop view */
@@ -437,6 +456,11 @@ footer {
     margin-left: 1rem;
     width: auto;
     padding: 0.5rem 2rem;
+  }
+
+  #checkup-btn{
+    font-size: 1.2rem;
+    font-family: "Nexa-Bold";
   }
 
   li {
