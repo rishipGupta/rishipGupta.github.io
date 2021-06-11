@@ -6,10 +6,6 @@
     --date-selector-input-gray:#919191;
 }
 
-body{
-    /* height: 100vh; */
-}
-
 .main-container {
     background: var(--background-blue);
     width: 100%;
