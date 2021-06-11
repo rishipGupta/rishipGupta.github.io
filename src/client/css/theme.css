@@ -111,8 +111,8 @@ button {
 }
 
 .choose-file-btn{
-  font-size: 0.75rem;
-  padding:0.06rem 0.5rem;
+  font-size: 1.1rem;
+  padding:0.3rem 1.5rem;
   border-radius:0.2rem;
   color:black;
   border-color: #AEAEAE;
@@ -129,12 +129,21 @@ button {
 }
 
 #treatment-page-nav-btn{
-  font-size:1.2rem;
+  font-size:0.9rem;
 }
 
 #treatment-page-getquote-btn{
-  font-size:1.2rem;
+  font-size:0.9rem;
   margin-left:0.5rem;
+}
+
+#checkup-btn{
+  font-family: "Nexa-Bold";
+}
+
+#career-enquiry-btn{
+  background-color:#0173B2;
+  font-family: "Nexa-Bold";
 }
 
 h1 {
@@ -325,6 +334,11 @@ footer {
     width: auto;
   }
 
+  #career-enquiry-btn{
+    padding: 1rem 1.5rem;
+font-size: 1rem;
+  }
+
   h1 {
     font-size: 2rem;
     line-height: 1.8rem;
@@ -388,6 +402,11 @@ footer {
     padding: 0.5rem 0.8rem;
     font-size: 0.85rem;
   }
+
+  #checkup-btn{
+    font-size: 1rem;
+    font-family: "Nexa-Bold";
+  }
 }
 
 /* Desktop view */
@@ -437,6 +456,11 @@ footer {
     margin-left: 1rem;
     width: auto;
     padding: 0.5rem 2rem;
+  }
+
+  #checkup-btn{
+    font-size: 1.2rem;
+    font-family: "Nexa-Bold";
   }
 
   li {
