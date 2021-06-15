@@ -1,9 +1,8 @@
-
-#details-text-box{
-    border:1.5px solid #e2e2e2;
-    outline:none;
-   color: #89898a;
-   padding:0.5rem;
-   font-size: 0.9rem;
-   margin:0;
+#details-text-box {
+  border: 1.5px solid #e2e2e2;
+  outline: none;
+  font-family: "Nexa-Light";
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin: 0;
 }
