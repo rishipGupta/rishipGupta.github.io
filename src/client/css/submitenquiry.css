@@ -48,6 +48,7 @@ body {
   }
   
   @media (min-width: 64rem) {
+      
 
     .main-container {
       padding: 7rem 20%;
