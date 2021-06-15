@@ -13,8 +13,8 @@
 
 .contact-us-header-text {
   position: absolute;
-  top: 33%;
-  left: 22%;
+  top: 37%;
+  left: 23%;
   text-align: center;
 }
 
@@ -92,8 +92,8 @@
 
 @media (min-width: 48rem) and (max-width: 64rem) {
   .contact-us-header-text {
-    top: 36%;
-    left: 28%;
+    top: 37%;
+    left: 35%;
   }
 
   .contact-us-header-subtitle {
@@ -171,7 +171,7 @@
 @media (min-width: 64rem){
 
     .contact-us-header-text {
-        top: 36%;
+        top: 37%;
         left: 5rem;
         text-align: left;
       }
