@@ -1,0 +1,62 @@
+body {
+  display: grid;
+  grid-template-rows: 7% 87% 30%;
+  height: 100vh;
+}
+
+.main-nav {
+  align-self: start;
+}
+
+.main-container {
+  align-self: start;
+}
+
+#details-text-box {
+  border: 1.5px solid #e2e2e2;
+  outline: none;
+  font-family: "Nexa-Light";
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#signup-footer{
+    grid-row: 3/4;
+    align-self: start;
+}
+
+.signup-credentials-item {
+    margin-bottom: 1rem;
+}
+
+.appointment-form-info-containers{
+    margin-bottom:1rem;
+}
+
+@media (min-width: 48rem) and (max-width:64rem) {
+    body {
+        grid-template-rows: 7% 70% 23%;
+    }
+    .main-container {
+      padding: 4rem 8rem;
+    }
+  
+    #signup-footer{
+        align-self: start;
+    }
+  }
+  
+  @media (min-width: 64rem) {
+      
+
+    .main-container {
+      padding: 7rem 20%;
+    }
+  
+  
+    #signup-footer{
+        grid-row: 3/4;
+        align-self: end;
+    }
+  }
