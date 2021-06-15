@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-rows: 7.5% 88% 2.5%;
+  grid-template-rows: 7% 87% 6%;
   height: 100vh;
 }
 
@@ -20,3 +20,48 @@ body {
   font-size: 0.9rem;
   margin: 0;
 }
+
+#signup-footer{
+    grid-row: 3/4;
+    align-self: start;
+}
+
+.signup-credentials-item {
+    margin-bottom: 1rem;
+}
+
+.appointment-form-info-containers{
+    margin-bottom:1rem;
+}
+
+@media (min-width: 48rem) and (max-width:64rem) {
+    .main-container {
+      padding: 10rem;
+    }
+  
+    #login-footer{
+      padding:3rem;
+    }
+    .login-footer-icon {
+      font-size: 0.75rem;
+    }
+  
+    .login-footer-text {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (min-width: 64rem) {
+    .main-container {
+      padding: 7rem 20%;
+    }
+  
+  
+    .login-footer-icon {
+      font-size: 0.85rem;
+    }
+  
+    .login-footer-text {
+      font-size: 1rem;
+    }
+  }
