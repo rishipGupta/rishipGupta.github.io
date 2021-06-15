@@ -48,10 +48,12 @@ body {
   }
   
   @media (min-width: 64rem) {
-      
+    body {
+     grid-template-rows: repeat(3,auto);
+  }   
 
     .main-container {
-      padding: 7rem 20%;
+      padding: 3rem 20%;
     }
   
   
