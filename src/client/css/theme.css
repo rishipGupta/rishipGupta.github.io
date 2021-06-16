@@ -485,6 +485,12 @@ font-size: 1rem;
     font-family: "Nexa-Bold";
   }
 
+  .doc-profile-btn{
+    width: 100%;
+    padding:0.5rem;
+    font-size:0.85rem;
+  }
+
   li {
     font-size: 0.85rem;
     color: #526075;

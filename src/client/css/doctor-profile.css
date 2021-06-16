@@ -246,8 +246,8 @@
 
     .doc-info-container{
         display: grid;
-        grid-template-columns: 77% 23%;
-        grid-template-rows: 30% 70%;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 25% 75%;
         align-items: start;
         justify-items: start;
         padding-bottom: 2rem;
@@ -261,7 +261,7 @@
  
     .name-container{
         margin:0;
-        padding:1rem 0 2rem 0;
+        padding:2rem 0 2rem 0;
     }
  
     .doc-name{
