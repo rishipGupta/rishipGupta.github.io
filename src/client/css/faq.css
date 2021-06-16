@@ -13,7 +13,7 @@
 }
 
 .attribute-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
@@ -39,4 +39,14 @@
     object-position: right;
 }
 
+}
+
+@media (min-width:64rem){
+
+    .contact-us-header-text {
+        margin-left:6.25rem;
+    }
+    .contact-us-header-title{
+        text-align: left;
+    }
 }
