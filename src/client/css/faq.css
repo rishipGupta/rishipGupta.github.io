@@ -1,0 +1,42 @@
+.contact-us-header-text {
+  left: 0;
+  right: 0;
+}
+
+.attribute-category {
+  border: none;
+}
+
+.attribute-title-container {
+  padding: 1rem 0;
+  width: 90%;
+}
+
+.attribute-title {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.attribute-description{
+    font-size: 0.9rem;
+}
+
+@media (min-width: 48rem) and (max-width: 64rem) {
+  .attribute-title {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .contact-us-header-figure {
+    height: 14rem;
+}
+
+.contact-us-header-figure {
+    height: 14rem;
+}
+
+.contact-us-header-img {
+    object-position: right;
+}
+
+}
