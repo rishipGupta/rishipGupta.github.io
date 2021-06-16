@@ -246,7 +246,7 @@
 
     .doc-info-container{
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 77% 23%;
         grid-template-rows: 25% 75%;
         align-items: start;
         justify-items: start;
@@ -287,7 +287,7 @@
     }
  
     .attribute-title-container{
-        padding:1rem 0;
+        padding:1.4rem 0;
     }
  
     .attribute-title{
