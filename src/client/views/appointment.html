@@ -49,18 +49,26 @@
               </div>
               <div class="appointment-form-info-containers">
                   <h5 class="appointment-form-info-title">Time Interval*</h5>
-                  
                   <div class="radio-input-container">
+                    <label for="morning" class="radio">
+                      <input type="radio" name="time" id="morning" class="radio__input">
                       <div class="radio-input"></div>
-                      <p class="info-label">Morning</p>
+                      Morning
+                    </label>
                   </div>
                   <div class="radio-input-container">
-                    <div class="radio-input"></div>
-                    <p class="info-label">Afternoon</p>
+                    <label for="afternoon" class="radio">
+                      <input type="radio" name="time" id="afternoon" class="radio__input">
+                      <div class="radio-input"></div>
+                      Afternoon
+                    </label>
                 </div>
                 <div class="radio-input-container">
+                    <label for="evening" class="radio">
+                    <input type="radio" name="time" id="evening" class="radio__input">
                     <div class="radio-input"></div>
-                    <p class="info-label">Evening</p>
+                    Evening
+                  </label>
                 </div>
 <!--                   
                 <input class="radio-input" type="radio" name="time" value="morning">
@@ -74,20 +82,32 @@
                 <h5 class="appointment-form-info-title">Appointment Status / Urgency*</h5>
 
                 <div class="radio-input-container">
+                  <label for="routine-check-up" class="radio">
+                    <input type="radio" name="status" id="routine-check-up" class="radio__input">
                     <div class="radio-input"></div>
-                    <p class="info-label">Routine Check-up</p>
+                    Routine Check-up
+                  </label>
                 </div>
                 <div class="radio-input-container">
+                  <label for="non-urgent-check-up" class="radio">
+                    <input type="radio" name="status" id="non-urgent-check-up" class="radio__input">
                     <div class="radio-input"></div>
-                    <p class="info-label">Non Urgent Check-up</p>
+                    Non Urgent Check-up
+                  </label>
                 </div>
                 <div class="radio-input-container">
+                  <label for="urgent-check-up" class="radio">
+                    <input type="radio" name="status" id="urgent-check-up" class="radio__input">
                     <div class="radio-input"></div>
-                    <p class="info-label">Urgent Check-up</p>
+                    Urgent Check-up
+                  </label>
                 </div>
                 <div class="radio-input-container">
+                  <label for="surgical-appointment" class="radio">
+                    <input type="radio" name="status" id="surgical-appointment" class="radio__input">
                     <div class="radio-input"></div>
-                    <p class="info-label">Surgical Appointment</p>
+                    Surgical Appointment
+                  </label>
                 </div>
               <!-- <input class="radio-input" type="radio" name="status" value="routine-check-up">
               <label class="info-label" for="routine-check-up">Routine Check-up</label><br>
@@ -116,7 +136,6 @@
           </form>
        </section>
       </main>
-
       <footer id="appointment-footer">
         <h6 class="appointment-footer-text">All Rights Reserved</h6>
         <i class="far fa-copyright" id="appointment-footer-icon"></i>
