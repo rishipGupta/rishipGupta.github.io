@@ -306,7 +306,7 @@
 .zero-fees-description-container i {
   font-size: 1.25rem;
   color: #80b9d8;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0.5rem;
 }
 
 .zero-fees-description-text {
@@ -364,5 +364,31 @@
 
 .more-hospital-text{
     font-size: 0.9rem;
-    padding:1.5rem;
+    padding:1.5rem 1.5rem 0 1.5rem;
+}
+
+.doc-consultation-container{
+    padding-top:1rem;
+}
+
+.doc-consultation-title{
+    text-align: center;
+    padding:0 1rem;
+}
+
+.doc-consultation-image-container{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+.doc-consultation-figure{
+border-radius: 10px;
+height:15rem;
+}
+
+.doc-consultation-img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
