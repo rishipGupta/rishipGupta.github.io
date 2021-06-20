@@ -39,7 +39,7 @@
 .plans-section {
   background: linear-gradient(to bottom, rgb(196, 223, 238), transparent);
   height: 90rem;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
 .plans-main-container {
@@ -141,13 +141,13 @@
 }
 
 .ratings-section-title {
-    padding-top:2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   line-height: 1.8rem;
 }
 
 .ratings-section-description {
-  padding-bottom: 2rem; 
+  padding-bottom: 2rem;
   font-size: 0.9rem;
 }
 
@@ -276,7 +276,7 @@
 
 .plus-membership-section {
   text-align: center;
-  padding-top:1rem;
+  padding-top: 1rem;
 }
 
 .plus-membership-title-container {
@@ -325,7 +325,7 @@
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  gap:0px;
+  gap: 0px;
 }
 
 .hospital-logo-title {
@@ -333,18 +333,18 @@
 }
 
 .hospital-logo-figure-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:0.75rem 0.3rem;
-    border-bottom: 0.5px solid #80b9d8;
-    border-right: 0.5px solid #80b9d8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0.3rem;
+  border-bottom: 0.5px solid #80b9d8;
+  border-right: 0.5px solid #80b9d8;
 }
 
-.hospital-logo-figure{
-    height: 5.1rem;
-    width: 90%;
+.hospital-logo-figure {
+  height: 5.1rem;
+  width: 90%;
 }
 
 .hospital-logo-image {
@@ -367,40 +367,114 @@
   border-bottom: none;
 }
 
-
-.more-hospital-text{
-    font-size: 0.9rem;
-    padding:1.5rem 1.5rem 0 1.5rem;
+.more-hospital-text {
+  font-size: 0.9rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-.doc-consultation-container{
-    padding-top:1rem;
+.doc-consultation-container {
+  padding-top: 1rem;
 }
 
-.doc-consultation-title{
-    text-align: center;
-    line-height: 1.8rem;
-    font-size: 1.55rem;
-    /* padding:0 1rem; */
+.doc-consultation-title {
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 1.55rem;
+  /* padding:0 1rem; */
 }
 
-.doc-consultation-image-container{
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
-border-radius: 10px;
+.doc-consultation-image-container {
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.doc-consultation-figure{
-border-radius: 10px;
-height:15rem;
+.doc-consultation-figure {
+  border-radius: 10px;
+  height: 15rem;
 }
 
-.doc-consultation-img{
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.doc-consultation-img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.order-discount-figure{
-    height: 18rem;
+.order-discount-figure {
+  height: 18rem;
+}
+
+.test-included-section {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.test-included-section-title {
+  font-size: 0.9rem;
+  font-family: "Nexa-bold";
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.tests-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  align-items: center;
+  justify-items: stretch;
+  gap: 0.6rem;
+  margin: 0.75rem;
+}
+
+.test-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* width: 45%; */
+  box-shadow: 3px -1px 9px 4px rgba(0, 0, 0, 0.05);
+  /* margin:0.5rem 0.5rem 0 0.5rem; */
+}
+
+.test-figure {
+  height: 3rem;
+  margin: 1.25rem;
+}
+
+.test-name {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.test-count {
+  font-size: 0.9rem;
+  margin: 1.25rem;
+}
+
+.toggle-main-container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-left: 0.7rem;
+}
+
+.toggle{
+    height: 0.6rem;
+width: 0.6rem;
+border-radius: 50%;
+background-color: #CCCCCC;
+margin:0.25rem;
+}
+
+
+.toggle-blue{
+    background-color: #0173b2;
 }
