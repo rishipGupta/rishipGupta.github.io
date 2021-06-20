@@ -410,7 +410,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .test-included-section-title {
@@ -421,13 +420,11 @@
 }
 
 .tests-container {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: stretch;
-  gap: 0.6rem;
-  margin: 0.75rem;
+  padding: 0.75rem;
 }
 
 .test-type-container {
@@ -435,12 +432,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  /* width: 45%; */
+  height: 12rem;
+  width: 48%;
   box-shadow: 3px -1px 9px 4px rgba(0, 0, 0, 0.05);
   /* margin:0.5rem 0.5rem 0 0.5rem; */
 }
 
+.vitamin-profile-container {
+  margin-right: 0.65rem;
+}
+
+.thyroid-profile-container {
+  margin: 0.65rem 0.65rem 0 0;
+}
+
+.liver-profile-container {
+  margin-top: 0.65rem;
+}
 .test-figure {
   height: 3rem;
   margin: 1.25rem;
@@ -458,23 +466,83 @@
   margin: 1.25rem;
 }
 
-.toggle-main-container{
-    display: flex;
+.toggle-main-container {
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-  margin-left: 0.7rem;
 }
 
-.toggle{
-    height: 0.6rem;
-width: 0.6rem;
-border-radius: 50%;
-background-color: #CCCCCC;
-margin:0.25rem;
+.toggle {
+  height: 0.6rem;
+  width: 0.6rem;
+  border-radius: 50%;
+  background-color: #cccccc;
+  margin: 0.25rem;
 }
 
+.toggle-blue {
+  background-color: #0173b2;
+}
 
-.toggle-blue{
-    background-color: #0173b2;
+.reviews-main-container {
+  padding: 0 1rem;
+}
+
+.reviews-title-container {
+  padding: 0 0.75rem 1rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews-title {
+  font-size: 1.5rem;
+}
+
+.review-sub-container {
+  padding: 0.75rem 0.75rem;
+  box-shadow: 3px -1px 9px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.75rem;
+}
+
+.review-description {
+  font-size: 0.9rem;
+  font-family: "Nexa-Bold";
+  line-height: 1.4rem;
+}
+
+.reviewer-details-container {
+  display: flex;
+}
+
+.review-figure {
+  height: 4rem;
+  width: 4rem;
+}
+
+.review-image {
+  background: white;
+  border-radius: 50%;
+}
+
+.reviewer-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+}
+
+.reviewer-name {
+  font-size: 1rem;
+}
+
+.plan-user-indicator {
+  background: #cce3f0;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.4rem;
+  font-size: 0.65rem;
+  color: #0173b2;
+  font-family: "Nexa-Bold";
+  letter-spacing: 0.05rem;
 }
