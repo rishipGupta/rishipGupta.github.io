@@ -568,3 +568,16 @@
 font-size: 0.75rem;
 line-height: 1.5rem;
 }
+
+#tvastra-plus-footer{
+    background: #2A2D3E;
+}
+
+#tvastra-plus-footer-list li{
+    font-size: 0.9rem;
+}
+
+.footer-logo {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
