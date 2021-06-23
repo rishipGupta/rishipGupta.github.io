@@ -1259,4 +1259,43 @@
 .plan-user-indicator {
     font-size: 0.85rem;
 }
+
+.faq-main-container{
+    margin-top:2rem;
+}
+
+.faq-title {
+    font-size: 2.1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.attribute-title {
+    font-size: 1.25rem;
+    line-height: 2.75rem;
+}
+
+.attribute-title-container {
+    padding: 0.75rem 0;
+}
+
+.attribute-description {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+}
+
+#tvastra-plus-footer {
+    background: white;
+}
+
+.footer-logo {
+    margin-bottom: 0;
+  }
+
+  #doctor-profile-follow-us i {
+    color: var(--dark-primary-blue);
+    padding: 0 0 0 0.75rem;
+    font-size: 1.25rem;
+  }
+
 }
