@@ -1208,6 +1208,10 @@
     margin:  0 0 1.5rem 2rem;
 }
 
+.test-img{
+    width: auto;
+}
+
 .test-name {
     font-size: 1.15rem;
     padding: 0 2rem;
