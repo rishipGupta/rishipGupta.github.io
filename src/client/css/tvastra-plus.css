@@ -1217,4 +1217,46 @@
     font-size: 1.1rem;
     margin: 1.5rem 0 0 2rem;
 }
+
+.reviews-main-container {
+    padding: 2rem 6.25rem;
+}
+
+.reviews-title-container {
+    justify-content: flex-start;
+    padding: 0 0 2rem 0;
+}
+
+.reviews-title {
+    margin-right: 1rem;
+    font-size: 2.1rem;
+}
+
+.review-box {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    height: 10rem;
+    column-gap: 0.65rem;
+}
+
+.review-sub-container {
+    height: 15rem;
+    display: grid;
+    grid-template-rows: 67% 28%;
+}
+
+.review-description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color:rgb(44, 44, 44);
+    /* font-family: "Nexa-Light"; */
+}
+
+.reviewer-name {
+    font-size: 1.15rem;
+}
+
+.plan-user-indicator {
+    font-size: 0.85rem;
+}
 }
