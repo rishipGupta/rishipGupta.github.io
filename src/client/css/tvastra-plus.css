@@ -904,7 +904,7 @@
   .hero-section-text-container {
     align-items: start;
     padding: 0 6.25rem;
-    top: 15rem;
+    top: 13rem;
   }
 
   .hero-section-cover-figure {
@@ -957,6 +957,7 @@
     font-size: 1.1rem;
     text-align: center;
     line-height: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   .advanced-plan {
@@ -985,7 +986,7 @@
   }
 
   .basic-plan-description-box {
-    margin-bottom: 8.6rem;
+    margin-bottom: 6.5rem;
     width: 85%;
   }
 
@@ -999,12 +1000,12 @@
 }
 
   .advanced-plan-description-box {
-    margin-bottom: 4rem;
+    margin-bottom: 0.25rem;
     width: 75%;
   }
 
   .plans-section {
-    height: 48rem;
+    height: 45rem;
   }
 
   .ratings-section-title {
