@@ -78,6 +78,10 @@
   margin-bottom: 1.5rem;
 }
 
+.basic-plan{
+    margin-bottom: 2rem;
+}
+
 .plan-sub-container {
   display: flex;
   flex-direction: column;
@@ -657,19 +661,21 @@
   }
 
   .basic-plan-description-box {
-    margin-bottom: 6.7rem;
+    margin-bottom: 7.5rem;
   }
 
-  /* .advanced-plan{
-      width: 95%;
-  } */
+  .advanced-plan{
+ 
+    border-right: 2px solid #A1CBE3;
+    border-left: 2px solid #A1CBE3;
+}
 
   .advanced-plan-description-box {
-    margin-bottom: 3.6rem;
+    margin-bottom: 5.5rem;
   }
 
   .comprehensive-plan-description-box {
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
   }
 
   .plans-section {
@@ -987,6 +993,11 @@
     width: 85%;
   }
 
+  .advanced-plan{
+    border-right: 2px solid #A1CBE3;
+    border-left: 2px solid #A1CBE3;
+}
+
   .advanced-plan-description-box {
     margin-bottom: 4rem;
     width: 75%;
@@ -1113,7 +1124,7 @@
 
 .zero-fees-section {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 69% 29%;
 }
 
 .zero-fees-info-container {
