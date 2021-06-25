@@ -38,18 +38,20 @@
 
 .plans-section {
   background: linear-gradient(to bottom, rgb(196, 223, 238), transparent);
-  height: 90rem;
+  /* height: 90rem; */
+  position: relative;
   padding-bottom: 0;
 }
 
 .plans-main-container {
-  background: white;
-  padding: 1rem 0.75rem;
-  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 18rem;
-  left: 1rem;
-  right: 1rem;
+    background: white;
+    padding: 1rem 0.75rem;
+    border-radius: 0.35rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -12.5rem;
+    left: 0;
+    right: 0;
 }
 
 .plans-section-heading {
@@ -110,7 +112,7 @@
 }
 
 .plan-container-descrption {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
   font-size: 0.9rem;
 }
 
@@ -159,7 +161,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* padding-top:0; */
+  padding-top:0;
 }
 
 .ratings-section-title {
@@ -622,14 +624,33 @@
     font-size: 0.95rem;
   }
 
+  .plans-section {
+    height: 35rem;
+  }
+
   .plans-main-container {
-    left: 2rem;
-    right: 2rem;
+    /* left: 2rem;
+    right: 2rem; */
   }
   .plans-section-heading-title {
     font-size: 1.55rem;
   }
 
+  .plan-container {
+    margin-bottom: 0.25rem;
+    height: 34rem;
+  }
+.plan-sub-container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+  grid-template-rows: 15% 70% 25%;  
+  margin: auto;
+  padding-top: 1.5rem;
+  height: 26rem;
+
+}
   .plans-section-heading-subtitle {
     font-size: 0.95rem;
   }
@@ -638,22 +659,30 @@
     display: flex;
   }
 
-  .plan-container {
-    margin-bottom: 0.25rem;
-  }
+  
 
   .plan-container-title {
     padding-bottom: 2.5rem;
     font-size: 1.3rem;
+    grid-row: 1/2;
   }
 
   .comprehensive-plan-title {
     padding-bottom: 1.8rem;
+}
+
+.plan-container-descrption-box {
+    margin-bottom: 0;
+    grid-row: 2/3;
   }
 
-  .plan-container-descrption-box {
-    margin-bottom: 0;
-  }
+  .pricing-details-main-container {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
   .plan-container-descrption {
     padding-bottom: 0.75rem;
@@ -661,7 +690,7 @@
   }
 
   .basic-plan-description-box {
-    margin-bottom: 7.5rem;
+    margin-bottom: 6.5rem;
   }
 
   .advanced-plan{
@@ -671,20 +700,19 @@
 }
 
   .advanced-plan-description-box {
-    margin-bottom: 5.5rem;
+    margin-bottom: 4rem;
   }
 
   .comprehensive-plan-description-box {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
-  .plans-section {
-    height: 30rem;
-  }
+  
 
   .ratings-section-description {
+    width: 90%;
     font-size: 0.92rem;
-    padding: 0 2.75rem 2rem 2.75rem;
+    padding:0  0 2rem 0;
     line-height: 1.35rem;
   }
 
@@ -904,7 +932,7 @@
   .hero-section-text-container {
     align-items: start;
     padding: 0 6.25rem;
-    top: 15rem;
+    top: 13rem;
   }
 
   .hero-section-cover-figure {
@@ -928,9 +956,10 @@
   .plans-main-container {
     padding: 1rem 4rem;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
-    top: 37rem;
+    top:-11rem;
+    /* top: 37rem;
     left: 6.25rem;
-    right: 6.25rem;
+    right: 6.25rem; */
   }
 
   .plans-section-heading-title {
@@ -957,6 +986,7 @@
     font-size: 1.1rem;
     text-align: center;
     line-height: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   .advanced-plan {
@@ -985,7 +1015,7 @@
   }
 
   .basic-plan-description-box {
-    margin-bottom: 8.6rem;
+    margin-bottom: 6.5rem;
     width: 85%;
   }
 
@@ -999,12 +1029,12 @@
 }
 
   .advanced-plan-description-box {
-    margin-bottom: 4rem;
+    margin-bottom: 0.25rem;
     width: 75%;
   }
 
   .plans-section {
-    height: 48rem;
+    /* height: 45rem; */
   }
 
   .ratings-section-title {
@@ -1013,7 +1043,8 @@
   }
 
   .ratings-section-description {
-    padding: 0 30rem 3rem 30rem;
+    padding:0 0 3rem 0;
+    width: 50%;
     text-align: center;
     line-height: 2rem;
     font-size: 1.1rem;
