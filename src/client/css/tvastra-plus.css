@@ -117,10 +117,10 @@
 }
 
 .pricing-details-main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-details-container {
@@ -616,7 +616,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 48rem) and (max-width: 64rem) {
+@media (min-width: 48rem) {
   .hero-section-text-container {
     align-items: start;
     padding: 0 2rem;
@@ -671,7 +671,6 @@
     grid-row: 1/2;
   }
 
-
   .plan-container-descrption-box {
     margin-bottom: 0;
     grid-row: 2/3;
@@ -687,11 +686,11 @@
     justify-content: center;
   }
 
-  .advanced-plan-pricing-main-container{
-      align-self: end;
+  .advanced-plan-pricing-main-container {
+    align-self: end;
   }
 
-  .pricing-details-container{
+  .pricing-details-container {
     margin: 0rem 0 1rem 0;
   }
 
@@ -940,11 +939,11 @@
   .hero-section-text-container {
     align-items: start;
     padding: 0 6.25rem;
-    top: 13rem;
+    top: 10rem;
   }
 
   .hero-section-cover-figure {
-    height: 36rem;
+    height: 32rem;
   }
 
   .hero-section-cover-image {
@@ -962,7 +961,7 @@
   }
 
   .plans-main-container {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
     top: -11rem;
     /* top: 37rem;
@@ -987,62 +986,74 @@
 
   .plan-container-title {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 0rem;
+  }
+
+  .plan-container-descrption-box{
+      margin:0;
+      width: 88%;
   }
 
   .plan-container-descrption {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 2rem;
     padding-bottom: 0.5rem;
   }
 
-  .advanced-plan {
-    width: 85%;
-  }
-
   #rupee-sign {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
   }
 
   .price-info-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .pricing-details-container {
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 1.75rem 0;
   }
 
   .pricing-details-container h6 {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
   }
 
   .plan-details-text {
-    padding-bottom: 2rem;
-    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.95rem;
   }
 
-  .basic-plan-description-box {
+  /* .basic-plan-description-box {
     margin-bottom: 6.5rem;
     width: 85%;
   }
 
   .comprehensive-plan-description-box {
     width: 85%;
-  }
+  } */
 
   .advanced-plan {
     border-right: 2px solid #a1cbe3;
     border-left: 2px solid #a1cbe3;
   }
 
-  .advanced-plan-description-box {
+  /* .advanced-plan-description-box {
     margin-bottom: 0.25rem;
     width: 75%;
+  } */
+
+  .plan-container {
+    margin-bottom: 0.25rem;
+    height: 37rem;
+  }
+
+  .plan-sub-container {
+    grid-template-rows: 15% 65% 32%;
+    height: 33rem;
+    width: 95%;
   }
 
   .plans-section {
-    /* height: 45rem; */
+    height: 47rem;
   }
 
   .ratings-section-title {
@@ -1052,7 +1063,7 @@
 
   .ratings-section-description {
     padding: 0 0 3rem 0;
-    width: 50%;
+    width: 60%;
     text-align: center;
     line-height: 2rem;
     font-size: 1.1rem;
