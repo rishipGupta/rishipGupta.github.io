@@ -38,7 +38,7 @@
 
 .plans-section {
   background: linear-gradient(to bottom, rgb(196, 223, 238), transparent);
-  /* height: 90rem; */
+  height: 85rem;
   position: relative;
   padding-bottom: 0;
 }
@@ -625,7 +625,7 @@
   }
 
   .plans-section {
-    height: 34rem;
+    height: 31rem;
   }
 
   .plans-main-container {
@@ -638,17 +638,17 @@
 
   .plan-container {
     margin-bottom: 0.25rem;
-    height: 33rem;
+    height: 30rem;
   }
   .plan-sub-container {
     display: grid;
     align-items: center;
     justify-items: center;
     width: 90%;
-    grid-template-rows: 15% 70% 32%;
+    grid-template-rows: 15% 70% 34%;
     margin: auto;
     padding-top: 1.5rem;
-    height: 28rem;
+    height: 25rem;
   }
   .plans-section-heading-subtitle {
     font-size: 0.95rem;
