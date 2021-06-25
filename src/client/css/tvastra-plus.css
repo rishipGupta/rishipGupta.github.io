@@ -1002,11 +1002,11 @@
   }
 
   #rupee-sign {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   .price-info-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .pricing-details-container {
@@ -1014,12 +1014,12 @@
   }
 
   .pricing-details-container h6 {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .plan-details-text {
     padding-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   /* .basic-plan-description-box {
@@ -1043,11 +1043,11 @@
 
   .plan-container {
     margin-bottom: 0.25rem;
-    height: 37rem;
+    height: 36rem;
   }
 
   .plan-sub-container {
-    grid-template-rows: 15% 65% 32%;
+    grid-template-rows: 15% 64% 29%;
     height: 33rem;
     width: 95%;
   }
