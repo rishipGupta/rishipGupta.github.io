@@ -38,18 +38,20 @@
 
 .plans-section {
   background: linear-gradient(to bottom, rgb(196, 223, 238), transparent);
-  height: 90rem;
+  height: 85rem;
+  position: relative;
   padding-bottom: 0;
 }
 
 .plans-main-container {
   background: white;
   padding: 1rem 0.75rem;
+  border-radius: 0.35rem;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 18rem;
-  left: 1rem;
-  right: 1rem;
+  position: relative;
+  top: -12.5rem;
+  left: 0;
+  right: 0;
 }
 
 .plans-section-heading {
@@ -78,8 +80,8 @@
   margin-bottom: 1.5rem;
 }
 
-.basic-plan{
-    margin-bottom: 2rem;
+.basic-plan {
+  margin-bottom: 2rem;
 }
 
 .plan-sub-container {
@@ -110,8 +112,15 @@
 }
 
 .plan-container-descrption {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
   font-size: 0.9rem;
+}
+
+.pricing-details-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-details-container {
@@ -141,16 +150,16 @@
 }
 
 .popular-plan-container {
-    position: absolute;
-    padding: 0.35rem 0;
-    width: 25%;
-    text-align: center;
-    color: white;
-    background: #008000;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    top: -0.75rem;
-    left: 37%;
+  position: absolute;
+  padding: 0.35rem 0;
+  width: 25%;
+  text-align: center;
+  color: white;
+  background: #008000;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  top: -0.75rem;
+  left: 37%;
 }
 
 .ratings-section {
@@ -159,7 +168,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* padding-top:0; */
+  padding-top: 0;
 }
 
 .ratings-section-title {
@@ -607,7 +616,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 48rem) and (max-width: 64rem) {
+@media (min-width: 48rem) {
   .hero-section-text-container {
     align-items: start;
     padding: 0 2rem;
@@ -622,14 +631,32 @@
     font-size: 0.95rem;
   }
 
+  .plans-section {
+    height: 31rem;
+  }
+
   .plans-main-container {
-    left: 2rem;
-    right: 2rem;
+    /* left: 2rem;
+    right: 2rem; */
   }
   .plans-section-heading-title {
     font-size: 1.55rem;
   }
 
+  .plan-container {
+    margin-bottom: 0.25rem;
+    height: 30rem;
+  }
+  .plan-sub-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    grid-template-rows: 15% 70% 34%;
+    margin: auto;
+    padding-top: 1.5rem;
+    height: 25rem;
+  }
   .plans-section-heading-subtitle {
     font-size: 0.95rem;
   }
@@ -638,54 +665,61 @@
     display: flex;
   }
 
-  .plan-container {
-    margin-bottom: 0.25rem;
-  }
-
   .plan-container-title {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     font-size: 1.3rem;
-  }
-
-  .comprehensive-plan-title {
-    padding-bottom: 1.8rem;
+    grid-row: 1/2;
   }
 
   .plan-container-descrption-box {
     margin-bottom: 0;
+    grid-row: 2/3;
+    margin-top: 2rem;
+    align-self: start;
+  }
+
+  .pricing-details-main-container {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .advanced-plan-pricing-main-container {
+    align-self: end;
+  }
+
+  .pricing-details-container {
+    margin: 0rem 0 1rem 0;
   }
 
   .plan-container-descrption {
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.8rem;
     font-size: 0.9rem;
   }
 
-  .basic-plan-description-box {
+  /* .basic-plan-description-box {
     margin-bottom: 6.5rem;
+  } */
+
+  .advanced-plan {
+    border-right: 2px solid #a1cbe3;
+    border-left: 2px solid #a1cbe3;
   }
 
-  .advanced-plan{
- 
-    border-right: 2px solid #A1CBE3;
-    border-left: 2px solid #A1CBE3;
-}
-
-  .advanced-plan-description-box {
+  /* .advanced-plan-description-box {
     margin-bottom: 4rem;
-  }
+  } */
 
-  .comprehensive-plan-description-box {
-    margin-bottom: 0;
-  }
-
-  .plans-section {
-    height: 30rem;
-  }
+  /* .comprehensive-plan-description-box {
+    margin-bottom: 2rem;
+  } */
 
   .ratings-section-description {
     width: 90%;
     font-size: 0.92rem;
-    padding:0  0 2rem 0;
+    padding: 0 0 2rem 0;
     line-height: 1.35rem;
   }
 
@@ -905,11 +939,11 @@
   .hero-section-text-container {
     align-items: start;
     padding: 0 6.25rem;
-    top: 13rem;
+    top: 10rem;
   }
 
   .hero-section-cover-figure {
-    height: 36rem;
+    height: 32rem;
   }
 
   .hero-section-cover-image {
@@ -927,11 +961,12 @@
   }
 
   .plans-main-container {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
-    top: 37rem;
+    top: -11rem;
+    /* top: 37rem;
     left: 6.25rem;
-    right: 6.25rem;
+    right: 6.25rem; */
   }
 
   .plans-section-heading-title {
@@ -951,62 +986,75 @@
 
   .plan-container-title {
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 0rem;
+  }
+
+  .plan-container-descrption-box{
+      margin:0;
+      width: 88%;
   }
 
   .plan-container-descrption {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     line-height: 2rem;
     padding-bottom: 0.5rem;
   }
 
-  .advanced-plan {
-    width: 85%;
-  }
-
   #rupee-sign {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .price-info-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .pricing-details-container {
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 1.75rem 0;
   }
 
   .pricing-details-container h6 {
-    font-size: 1.25rem;
+    font-size: 0.95rem;
   }
 
   .plan-details-text {
-    padding-bottom: 2rem;
-    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
   }
 
-  .basic-plan-description-box {
+  /* .basic-plan-description-box {
     margin-bottom: 6.5rem;
     width: 85%;
   }
 
   .comprehensive-plan-description-box {
     width: 85%;
+  } */
+
+  .advanced-plan {
+    border-right: 2px solid #a1cbe3;
+    border-left: 2px solid #a1cbe3;
   }
 
-  .advanced-plan{
-    border-right: 2px solid #A1CBE3;
-    border-left: 2px solid #A1CBE3;
-}
-
-  .advanced-plan-description-box {
+  /* .advanced-plan-description-box {
     margin-bottom: 0.25rem;
     width: 75%;
+  } */
+
+  .plan-container {
+    margin-bottom: 0.25rem;
+    height: 36rem;
   }
 
+  .plan-sub-container {
+    grid-template-rows: 15% 64% 29%;
+    height: 33rem;
+    width: 95%;
+  }
+  
+
   .plans-section {
-    height: 45rem;
+    height: 47rem;
   }
 
   .ratings-section-title {
@@ -1015,8 +1063,8 @@
   }
 
   .ratings-section-description {
-    padding:0 0 3rem 0;
-    width: 50%;
+    padding: 0 0 3rem 0;
+    width: 60%;
     text-align: center;
     line-height: 2rem;
     font-size: 1.1rem;
@@ -1123,204 +1171,202 @@
   .zero-fees-title {
     font-size: 2.1rem;
     text-align: left;
-}
+  }
 
-.zero-fees-section {
+  .zero-fees-section {
     display: grid;
     grid-template-columns: 69% 29%;
-}
+  }
 
-.zero-fees-info-container {
+  .zero-fees-info-container {
     margin-right: 1.25rem;
-}
+  }
 
-.zero-fees-description-container {
+  .zero-fees-description-container {
     margin-bottom: 1.2rem;
-}
+  }
 
-.zero-fees-description-container i {
+  .zero-fees-description-container i {
     padding-left: 0;
-}
+  }
 
-.zero-fees-description-text {
+  .zero-fees-description-text {
     line-height: 1.5rem;
     font-size: 1.1rem;
-}
+  }
 
-.more-hospital-text {
+  .more-hospital-text {
     text-align: center;
-}
+  }
 
-
-.hospital-logo-main-container{
+  .hospital-logo-main-container {
     justify-self: end;
-}
-.hospital-logo-container {
+  }
+  .hospital-logo-container {
     padding: 0 2rem;
-}
+  }
 
-.doc-consultation-container {
+  .doc-consultation-container {
     display: grid;
     grid-template-columns: 25% 75%;
-}
+  }
 
-
-.doc-consultation-info-container{
+  .doc-consultation-info-container {
     margin-left: 2rem;
-}
-.doc-consultation-title {
+  }
+  .doc-consultation-title {
     font-size: 2.1rem;
     text-align: left;
-}
+  }
 
-.doc-consultaion-description-text {
+  .doc-consultaion-description-text {
     padding-right: 0;
-}
+  }
 
-.doc-consultation-image-container {
+  .doc-consultation-image-container {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-right: 1.25rem;
     width: 81%;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.doc-consultation-figure {
+  .doc-consultation-figure {
     width: 100%;
-}
+  }
 
-.order-container {
+  .order-container {
     display: grid;
     grid-template-columns: 75% 25%;
-}
+  }
 
-.order-info-container {
+  .order-info-container {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-right: 1.25rem;
-}
+  }
 
-.order-image-container {
+  .order-image-container {
     grid-column: 2/3;
     margin-right: 0;
     justify-self: end;
-}
+  }
 
-.health-checkup-info-container{
+  .health-checkup-info-container {
     margin-left: 2rem;
-}
+  }
 
-.test-title-container {
+  .test-title-container {
     width: 100%;
-}
+  }
 
-.test-included-section-title {
+  .test-included-section-title {
     text-align: left;
     font-size: 1.1rem;
-}
+  }
 
-.tests-container{
+  .tests-container {
     width: 100%;
     justify-content: space-between;
-}
+  }
 
-.test-type-container { 
-    width:24.5%;
-    margin:0;
+  .test-type-container {
+    width: 24.5%;
+    margin: 0;
     align-items: start;
     height: 14rem;
-}
+  }
 
-.test-figure {
+  .test-figure {
     height: 3.25rem;
-    margin:  0 0 1.5rem 2rem;
-}
+    margin: 0 0 1.5rem 2rem;
+  }
 
-.test-img{
+  .test-img {
     width: auto;
-}
+  }
 
-.test-name {
+  .test-name {
     font-size: 1.15rem;
     padding: 0 2rem;
-}
+  }
 
-.test-count {
+  .test-count {
     font-size: 1.1rem;
     margin: 1.5rem 0 0 2rem;
-}
+  }
 
-.reviews-main-container {
+  .reviews-main-container {
     padding: 2rem 6.25rem;
-}
+  }
 
-.reviews-title-container {
+  .reviews-title-container {
     justify-content: flex-start;
     padding: 0 0 2rem 0;
-}
+  }
 
-.reviews-title {
+  .reviews-title {
     margin-right: 1rem;
     font-size: 2.1rem;
-}
+  }
 
-.review-box {
+  .review-box {
     display: grid;
     grid-template-columns: repeat(3, 33%);
     height: 10rem;
     column-gap: 0.65rem;
-}
+  }
 
-.review-sub-container {
+  .review-sub-container {
     height: 15rem;
     display: grid;
     grid-template-rows: 67% 28%;
-}
+  }
 
-.review-description {
+  .review-description {
     font-size: 1rem;
     line-height: 1.75rem;
-    color:rgb(44, 44, 44);
+    color: rgb(44, 44, 44);
     /* font-family: "Nexa-Light"; */
-}
+  }
 
-.reviewer-name {
+  .reviewer-name {
     font-size: 1.15rem;
-}
+  }
 
-.plan-user-indicator {
+  .plan-user-indicator {
     font-size: 0.85rem;
-}
+  }
 
-.faq-main-container{
-    margin-top:2rem;
-}
+  .faq-main-container {
+    margin-top: 2rem;
+  }
 
-.faq-title {
+  .faq-title {
     font-size: 2.1rem;
     text-align: left;
     margin-bottom: 1.5rem;
-}
+  }
 
-.attribute-title {
+  .attribute-title {
     font-size: 1.25rem;
     line-height: 2.75rem;
-}
+  }
 
-.attribute-title-container {
+  .attribute-title-container {
     padding: 0.75rem 0;
-}
+  }
 
-.attribute-description {
+  .attribute-description {
     font-size: 1.1rem;
     line-height: 1.75rem;
-}
+  }
 
-#tvastra-plus-footer {
+  #tvastra-plus-footer {
     background: white;
-}
+  }
 
-.footer-logo {
+  .footer-logo {
     margin-bottom: 0;
   }
 
@@ -1329,5 +1375,4 @@
     padding: 0 0 0 0.75rem;
     font-size: 1.25rem;
   }
-
 }
