@@ -116,6 +116,13 @@
   font-size: 0.9rem;
 }
 
+.pricing-details-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .pricing-details-container {
   display: flex;
   align-items: baseline;
