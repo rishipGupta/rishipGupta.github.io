@@ -76,3 +76,15 @@ function treatmentImageCarousel(carouselIndex,toggleIndex){
     document.getElementById(carouselIndex).setAttribute('class','treatments-images');
     document.getElementById(toggleIndex).setAttribute('class','highlited-toggle__button');
 }
+
+function testImageCarousel(carouselIndex,toggleIndex){
+    document.getElementById('test-carousel-1').setAttribute('class','hide-tests-container');
+    document.getElementById('test-carousel-2').setAttribute('class','hide-tests-container');
+    
+    
+    document.getElementById('test-toggle-1').setAttribute('class','toggle');
+    document.getElementById('test-toggle-2').setAttribute('class','toggle');
+
+    document.getElementById(carouselIndex).setAttribute('class','tests-container');
+    document.getElementById(toggleIndex).setAttribute('class','toggle-blue');
+}

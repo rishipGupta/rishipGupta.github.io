@@ -511,8 +511,8 @@
       <div class="test-title-container">
         <p class="test-included-section-title">60 Tests Included</p>
       </div>
-      <div class="tests-container">
-        <div class="test-type-container vitamin-profile-container">
+      <div class="tests-container" id="test-carousel-1">
+        <div class="test-type-container" id="vitamin-profile-container">
           <div class="test-img-container">
             <figure class="test-figure">
               <img
@@ -526,7 +526,7 @@
           <p class="test-count">2 Tests</p>
         </div>
 
-        <div class="test-type-container">
+        <div class="test-type-container" id="iron-profile-container">
           <div class="test-img-container">
             <figure class="test-figure iron-def-figure">
               <img
@@ -540,7 +540,7 @@
           <p class="test-count iron-def-test-count">3 Tests</p>
         </div>
 
-        <div class="test-type-container thyroid-profile-container">
+        <div class="test-type-container" id="thyroid-profile-container">
           <div class="test-img-container">
             <figure class="test-figure">
               <img
@@ -554,7 +554,7 @@
           <p class="test-count">3 Tests</p>
         </div>
 
-        <div class="test-type-container liver-profile-container">
+        <div class="test-type-container" id="liver-profile-container">
           <div class="test-img-container">
             <figure class="test-figure">
               <img
@@ -568,9 +568,71 @@
           <p class="test-count">11 Tests</p>
         </div>
       </div>
+      <div class="hide-tests-container" id="test-carousel-2">
+        <div class="test-type-container" id="vitamin-profile-container">
+          <div class="test-img-container">
+            <figure class="test-figure">
+              <img
+                class="test-img"
+                src="../assets/images/tvastra-plus/tests/Thyroid.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <h5 class="test-name">Thyroid Profile</h5>
+          <p class="test-count">3 Tests</p>
+        </div>
+        <div class="test-type-container" id="liver-profile-container">
+          <div class="test-img-container">
+            <figure class="test-figure">
+              <img
+                class="test-img"
+                src="../assets/images/tvastra-plus/tests/Liver.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <h5 class="test-name">Liver Profile</h5>
+          <p class="test-count">11 Tests</p>
+        </div>
+        <div class="test-type-container" id="thyroid-profile-container">
+          <div class="test-img-container">
+            <figure class="test-figure">
+              <img
+                class="test-img"
+                src="../assets/images/tvastra-plus/tests/Vitamin_test.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <h5 class="test-name">Vitamin Profile</h5>
+          <p class="test-count">2 Tests</p>
+        </div>
+        <div class="test-type-container" id="iron-profile-container">
+          <div class="test-img-container">
+            <figure class="test-figure iron-def-figure">
+              <img
+                class="test-img"
+                src="../assets/images/tvastra-plus/tests/Iron_def.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+          <h5 class="test-name">Iron Deficiency Profile</h5>
+          <p class="test-count iron-def-test-count">3 Tests</p>
+        </div>
+      </div>
       <div class="toggle-main-container">
-        <div class="toggle toggle-blue"></div>
-        <div class="toggle"></div>
+        <div
+          class="toggle-blue"
+          id="test-toggle-1"
+          onclick="testImageCarousel('test-carousel-1','test-toggle-1')"
+        ></div>
+        <div
+          class="toggle"
+          id="test-toggle-2"
+          onclick="testImageCarousel('test-carousel-2','test-toggle-2')"
+        ></div>
       </div>
     </section>
     <div class="reviews-main-container">
