@@ -593,6 +593,9 @@
   width: 90%;
 }
 
+.attribute-category{
+  cursor: pointer;
+}
 .attribute-title {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -602,6 +605,50 @@
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
+
+.accordion-item-header::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+  transition: transform 0.3 s ease-in-out;
+}
+
+/* .accordion-item-header.active::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+} */
+
+.accordion-item-header.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-item-body{
+  display:none;
+}
+
+.accordion-item-header.active + .accordion-item-body{
+  display:block;
+}
+
 
 #tvastra-plus-footer {
   background: #2a2d3e;
@@ -635,10 +682,6 @@
     height: 31rem;
   }
 
-  .plans-main-container {
-    /* left: 2rem;
-    right: 2rem; */
-  }
   .plans-section-heading-title {
     font-size: 1.55rem;
   }

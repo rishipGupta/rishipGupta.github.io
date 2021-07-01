@@ -5,6 +5,7 @@
 
 .attribute-category {
   border: none;
+  cursor: pointer;
 }
 
 .attribute-title-container {
@@ -17,9 +18,54 @@
   line-height: 1.5rem;
 }
 
-.attribute-description{
-    font-size: 0.9rem;
+.attribute-description {
+  font-size: 0.9rem;
 }
+
+.accordion-item-header::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+  transition: transform 0.3 s ease-in-out;
+}
+
+/* .accordion-item-header.active::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+} */
+
+.accordion-item-header.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-item-body{
+  display:none;
+}
+
+.accordion-item-header.active + .accordion-item-body{
+  display:block;
+}
+
+
 
 @media (min-width: 48rem) and (max-width: 64rem) {
   .attribute-title {
@@ -29,24 +75,22 @@
 
   .contact-us-header-figure {
     height: 14rem;
-}
+  }
 
-.contact-us-header-figure {
+  .contact-us-header-figure {
     height: 14rem;
-}
+  }
 
-.contact-us-header-img {
+  .contact-us-header-img {
     object-position: right;
+  }
 }
 
-}
-
-@media (min-width:64rem){
-
-    .contact-us-header-text {
-        margin-left:6.25rem;
-    }
-    .contact-us-header-title{
-        text-align: left;
-    }
+@media (min-width: 64rem) {
+  .contact-us-header-text {
+    margin-left: 6.25rem;
+  }
+  .contact-us-header-title {
+    text-align: left;
+  }
 }

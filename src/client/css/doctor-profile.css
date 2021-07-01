@@ -58,6 +58,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2.5px dotted #d1d1d1;
+  cursor: pointer;
 }
 .attribute-title-container {
   display: flex;
@@ -75,7 +76,7 @@
   color: #0174b4;
 }
 
-.arrow-background {
+/* .arrow-background {
   border-radius: 50%;
   background: #e5f1f7;
   height: 1.2rem;
@@ -83,19 +84,61 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.fa-chevron-up,
+/* .fa-chevron-up,
 .fa-chevron-down {
   color: #0174b4;
   font-size: 0.65rem;
-  /* background-color: red; */
-}
+} */
 
 .attribute-description {
   background: #e5f1f7;
   font-size: 0.85rem;
   padding: 0.75rem;
+}
+
+.accordion-item-header::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+  transition: transform 0.3 s ease-in-out;
+}
+
+/* .accordion-item-header.active::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f077";
+  border-radius: 50%;
+  background: #e5f1f7;
+  height: 1.2rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0174b4;
+  font-size: 0.65rem;
+} */
+
+.accordion-item-header.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-item-body{
+  display:none;
+}
+
+.accordion-item-header.active + .accordion-item-body{
+  display:block;
 }
 
 .container {
