@@ -46,3 +46,33 @@ function howItWorksServices(serviceIndex, serviceNumIndex, serviceTitleIndex, se
     document.getElementById(serviceTitleIndex).setAttribute("class","service-01");
     document.getElementById(serviceImageIndex).setAttribute("class","service-imageBlock");
 };
+
+function docImageCarousel(carouselIndex,toggleIndex){
+    document.getElementById('doc-carousel-1').setAttribute('class','hide-doc-carousel');
+    document.getElementById('doc-carousel-2').setAttribute('class','hide-doc-carousel');
+    document.getElementById('doc-carousel-3').setAttribute('class','hide-doc-carousel');
+    document.getElementById('doc-carousel-4').setAttribute('class','hide-doc-carousel');
+    
+    
+    document.getElementById('toggle-1').setAttribute('class','doctors-toggle__button');
+    document.getElementById('toggle-2').setAttribute('class','doctors-toggle__button');
+    document.getElementById('toggle-3').setAttribute('class','doctors-toggle__button');
+    document.getElementById('toggle-4').setAttribute('class','doctors-toggle__button');
+
+    document.getElementById(carouselIndex).setAttribute('class','doctors-block');
+    document.getElementById(toggleIndex).setAttribute('class','highlited-toggle__button');
+}
+
+function treatmentImageCarousel(carouselIndex,toggleIndex){
+    document.getElementById('treatment-carousel-1').setAttribute('class','hide-treatments-images');
+    document.getElementById('treatment-carousel-2').setAttribute('class','hide-treatments-images');
+    document.getElementById('treatment-carousel-3').setAttribute('class','hide-treatments-images');
+    
+    
+    document.getElementById('treatment-toggle-1').setAttribute('class','doctors-toggle__button');
+    document.getElementById('treatment-toggle-2').setAttribute('class','doctors-toggle__button');
+    document.getElementById('treatment-toggle-3').setAttribute('class','doctors-toggle__button');
+
+    document.getElementById(carouselIndex).setAttribute('class','treatments-images');
+    document.getElementById(toggleIndex).setAttribute('class','highlited-toggle__button');
+}

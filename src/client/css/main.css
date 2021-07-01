@@ -206,6 +206,10 @@
   flex-direction: column;
   width: 100%;
 }
+
+.hide-doc-carousel{
+  display: none;
+}
 .doctorImage-section {
   display: flex;
   flex-direction: column;
@@ -274,7 +278,7 @@ figcaption {
   width: 0.6rem;
   border-radius: 50%;
   background: var(--doctor-toggle-gray);
-  margin-right: 0.5rem;
+  margin: 0.5rem;
 }
 
 .highlited-toggle__button {
@@ -283,6 +287,10 @@ figcaption {
   background: transparent;
   border-radius: 50%;
   border: 2.5px solid var(--highlighted-toggle-blue);
+}
+
+.hide-treatments-images{
+  display: none;
 }
 
 .treatments {
