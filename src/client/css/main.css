@@ -118,6 +118,14 @@
 }
 
 .fix-consultation-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid var(--dark-input-grey);
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
   border-color: var(--dark-primary-blue);
 }
 
@@ -133,10 +141,17 @@
   line-height: 1.2rem;
 }
 .service-01 {
+  padding-left: 0.5rem;
+  font-family: "Nexa-Bold";
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   color: var(--dark-primary-blue);
 }
 
 .servicenum-01 {
+  font-family: "Nexa-Bold";
+  font-size: 1rem;
+  line-height: 1.2rem;
   color: var(--light-primary-blue);
 }
 
@@ -163,6 +178,10 @@
 
 .service-image__subtitle {
   font-size: 0.8rem;
+}
+
+.image-hidden{
+  display: none;
 }
 
 .doctors {
@@ -406,12 +425,28 @@ figcaption {
     padding: 0.8rem;
   }
 
+  .fix-consultation-block{
+    width: 45%;
+    padding: 0.8rem;
+  }
+
   .service-tag {
     padding-left: 0.75rem;
     font-size: 1rem;
     line-height: 1.2rem;
   }
   .service-number {
+    font-family: "Nexa-Bold";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .service-01{
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .servicenum-01 {
     font-family: "Nexa-Bold";
     font-size: 0.9rem;
     line-height: 1.2rem;
@@ -593,7 +628,12 @@ figcaption {
   }
 
   .fix-consultation-block {
-    border-color: var(--how-it-works-list-blue);
+    width: 40%;
+    padding: 3rem 2rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    text-align: left;
+    border: 2.5px solid var(--how-it-works-list-blue);
   }
 
   .service-tag {
@@ -609,10 +649,13 @@ figcaption {
 
   .servicenum-01 {
     color: var(--how-it-works-list-blue);
+    font-size: 1.7rem;
   }
 
   .service-01 {
     color: var(--search-btn-desktop);
+    padding-left: 3rem;
+    font-size: 1.6rem;
   }
 
   .how-it-works__services {
