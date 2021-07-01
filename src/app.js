@@ -88,3 +88,11 @@ function testImageCarousel(carouselIndex,toggleIndex){
     document.getElementById(carouselIndex).setAttribute('class','tests-container');
     document.getElementById(toggleIndex).setAttribute('class','toggle-blue');
 }
+
+function moreServicesCarousel(carouselIndex){
+    document.getElementById('more-services-carousel-1').setAttribute('class','hide-treatment-figure-container');
+    document.getElementById('more-services-carousel-2').setAttribute('class','hide-treatment-figure-container');
+
+    document.getElementById(carouselIndex).setAttribute('class','treatment-figure-container');
+
+}

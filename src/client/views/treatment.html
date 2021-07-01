@@ -192,15 +192,15 @@
         <div class="more-services-header">
           <h2 class="more-services-title">More Services</h2>
           <div class="toggle-container">
-            <div class="toggle-background left-togglebackground">
+            <div class="toggle-background left-togglebackground" onclick="moreServicesCarousel('more-services-carousel-1')">
               <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="toggle-background right-togglebackground">
+            <div class="toggle-background right-togglebackground" onclick="moreServicesCarousel('more-services-carousel-2')">
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
         </div>
-        <article class="treatment-figure-container">
+        <article class="treatment-figure-container" id="more-services-carousel-1">
           <div class="treatmentImage-section">
             <figure class="treatment-fig">
               <img
@@ -241,6 +241,49 @@
             </div>
           </div>
         </article>
+        <article class="hide-treatment-figure-container" id="more-services-carousel-2">
+          
+          <div class="treatmentImage-section">
+            <figure class="treatment-fig">
+              <img
+                class="treatment-img"
+                src="../assets/images/cancer_image.jpg"
+                alt="cancer"
+              />
+            </figure>
+            <div class="treatment-name-container">
+              <span class="horizontal-line"></span>
+              <figcaption class="treatment-name">Cancer</figcaption>
+            </div>
+          </div>
+          <div class="treatmentImage-section cancer-info-container">
+            <figure class="treatment-fig">
+              <img
+                class="treatment-img"
+                src="../assets/images/cardiological_image.jpg"
+                alt="cardiology"
+              />
+            </figure>
+            <div class="treatment-name-container">
+              <span class="horizontal-line"></span>
+              <figcaption class="treatment-name">Cardiology</figcaption>
+            </div>
+          </div>
+          <div class="treatmentImage-section">
+            <figure class="treatment-fig">
+              <img
+                class="treatment-img"
+                src="../assets/images/orthopedics_image.jpg"
+                alt="Orthopedic Surgery"
+              />
+            </figure>
+            <div class="treatment-name-container">
+              <span class="horizontal-line"></span>
+              <figcaption class="treatment-name">Orthopedic Surgery</figcaption>
+            </div>
+          </div>
+         
+        </article>
       </section>
     </main>
     <footer class="footer" id="treatment-footer">
@@ -274,5 +317,6 @@
         </div>
       </div>
     </footer>
+    <script src="../../app.js"></script>
   </body>
 </html>

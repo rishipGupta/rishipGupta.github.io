@@ -217,6 +217,10 @@
   width: 100%;
 }
 
+.hide-treatment-figure-container{
+  display:none;
+}
+
 .treatmentImage-section {
   display: flex;
   flex-direction: column;
