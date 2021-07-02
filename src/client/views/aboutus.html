@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/main.css" />
@@ -15,135 +15,175 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>About Us</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="main-nav">
-        <figure class="main-nav__logo">
-          <img src="../assets/images/Logo.jpg" alt="logo" />
-        </figure>
-        <i class="fas fa-bars" id="toggle-bars"></i>
-        <ul class="main-nav__list">
-          <li>Doctors</li>
-          <li>Hospitals</li>
-          <li>Treatment</li>
-          <li>Other Services</li>
-          <li>About</li>
-        </ul>
-  
-        <div class="nav-buttons">
-          <button class="login-btn main-nav__btn" >Login/Sign Up</button>
-          <button class="dark-btn main-nav__btn" >
-            Get a Quote
-          </button>
-        </div>
-      </nav>
-      <main>
-        <div class="aboutus-hero-section">
-            <div class="aboutus-header-text">
-              <h1 class="aboutus-header-title">Living healthy matters.</h1>
-              <p class="aboutus-header-subtitle">Our specialists aspire to bridge the gap between your benefits plan and the health needs.</p>
-            </div>
-          </div>
+      <figure class="main-nav__logo">
+        <img src="../assets/images/Logo.jpg" alt="logo" />
+      </figure>
+      <i class="fas fa-bars" id="toggle-bars"></i>
+      <ul class="main-nav__list">
+        <a href="./doctor.html" class="nav-link"><li>Doctors</li></a>
+        <a href="./hospital.html" class="nav-link"><li>Hospitals</li></a>
+        <a href="./treatment.html" class="nav-link"><li>Treatment</li></a>
+        <a href="./submityourquery.html" class="nav-link"
+          ><li>Other Services</li></a
+        >
+        <a href="./aboutus.html" class="nav-link"><li>About</li></a>
+      </ul>
 
-          <section class="description-section">
-              <div class="description-text-container">
-                  <h2 class="description-title">You have to begin to tell the story of your life as you now want it to be and discontinue the tales.</h2>
-                <p class="description-text">Deployment long tail menetization strategy equity basic of team of conversion. Supply chain freemium investor long tail agile workers prototype validation influencer market share.</p>
-                <p class="description-text">Deployment long tail menetization strategy equity basic of team of conversion. Supply chain freemium investor long tail agile workers prototype validation influencer market share.</p>
-                <p class="description-text">Deployment long tail menetization strategy equity basic of team of conversion. Supply chain freemium investor long tail agile workers prototype validation influencer market share.</p>
-              </div>
-              <div class="signature-figure-container">
-              <figure class="signature-figure">
-                  <img class="signature-image" src="../assets/images/about-us/signature.png" alt="signature">
-              </figure>
-            </div>
-            <div class="doctor-figure-container">
-              <figure class="doctor-figure">
-                  <img src="../assets/images/about-us/femaleDoctor.png" alt="doctor image">
-              </figure>
-            </div>
-          </section>
-          <div id="checkup-main-container">
-            <div id="vid-container">
-              <video autoplay muted loop id="vid">
-                <source src="../assets/images/video/The New Stamford Hospital TV Commercial.mp4" type="video/mp4">
-              </video>
-            </div>
-              <section class="checkup-section">
-                  <div class="checkup-description-container">
-                      <h2 class="checkup-description-title">Your wellness builds upon the medical daily.</h2>
-                      <p class="checkup-description-text">Find your best self here. Discover new ways to live an inspiring life through natural beauty. nutrition and diet. an acive lifestyle. and better relationships. </p>
-                  </div>
-                  <div class="checkup-btn-container">
-                      <button class="light-btn" id="checkup-btn">Get a Free Checkup</button>
-                  </div>
-                  <div class="ratings-container">
-                      <ul class="rating-category">
-                          <li class="rating-category-score">12M</li>
-                          <li class="rating-category-description">Happy Patients</li>
-                      </ul>
-                      <ul class="rating-category center-rating-container">
-                        <li class="rating-category-score">5K</li>
-                        <li class="rating-category-description">Medical Assistants</li>
-                    </ul>
-                    <ul class="rating-category">
-                        <li class="rating-category-score">9.8</li>
-                        <li class="rating-category-description">Alexa Score</li>
-                    </ul>
-                    <ul class="rating-category">
-                        <li class="rating-category-score">3.2K</li>
-                        <li class="rating-category-description">Doctors Available</li>
-                    </ul>
-                    <ul class="rating-category center-rating-container">
-                        <li class="rating-category-score">45K</li>
-                        <li class="rating-category-description">Cure Rate</li>
-                    </ul>
-                    <ul class="rating-category">
-                        <li class="rating-category-score">75</li>
-                        <li class="rating-category-description">Health Points</li>
-                    </ul>
-                  </div>
-              </section>
-          </div>
-          <section class="container career-enquiry-container">
-            <div class="container__text">
-              <h2 class="container-title" id="career-enquiry-title">Join Our Team</h2>
-              <p class="container-subtitle" id="career-enquiry-subtitle">
-                We are always looking for good and talented people
-              </p>
-            </div>
-            <button class="light-btn submit-enquiry-btn" id="career-enquiry-btn">
-              Submit your CV
-            </button>
-          </section>
-      </main>
-      <footer class="footer" id="aboutus-footer">
-        <div class="footer-tabview">
-          <figure class="footer-logo">
-            <img src="../assets/images/logoFooter.png" alt="" />
+      <div class="nav-buttons">
+        <button class="login-btn main-nav__btn">Login/Sign Up</button>
+        <button class="dark-btn main-nav__btn">Get a Quote</button>
+      </div>
+    </nav>
+    <main>
+      <div class="aboutus-hero-section">
+        <div class="aboutus-header-text">
+          <h1 class="aboutus-header-title">Living healthy matters.</h1>
+          <p class="aboutus-header-subtitle">
+            Our specialists aspire to bridge the gap between your benefits plan
+            and the health needs.
+          </p>
+        </div>
+      </div>
+
+      <section class="description-section">
+        <div class="description-text-container">
+          <h2 class="description-title">
+            You have to begin to tell the story of your life as you now want it
+            to be and discontinue the tales.
+          </h2>
+          <p class="description-text">
+            Deployment long tail menetization strategy equity basic of team of
+            conversion. Supply chain freemium investor long tail agile workers
+            prototype validation influencer market share.
+          </p>
+          <p class="description-text">
+            Deployment long tail menetization strategy equity basic of team of
+            conversion. Supply chain freemium investor long tail agile workers
+            prototype validation influencer market share.
+          </p>
+          <p class="description-text">
+            Deployment long tail menetization strategy equity basic of team of
+            conversion. Supply chain freemium investor long tail agile workers
+            prototype validation influencer market share.
+          </p>
+        </div>
+        <div class="signature-figure-container">
+          <figure class="signature-figure">
+            <img
+              class="signature-image"
+              src="../assets/images/about-us/signature.png"
+              alt="signature"
+            />
           </figure>
-          <ul id="aboutus-footer-list">
-            <li>Doctor</li>
-            <li>Hospital</li>
-            <li>Treatment</li>
-            <li>Other Services</li>
-            <li>FAQs</li>
-          </ul>
         </div>
-        <div class="footer-tabview copyright-footer" id="aboutus-footer-desktop">
-          <div class="follow-us" id="aboutus-follow-us">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-pinterest-p"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-google-plus-g"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
-          <div class="copyright" id="aboutus-copyright">
-            <h6 class="copyright-text">All Rights Reserved.</h6>
-            <i class="far fa-copyright copyright-icon"></i>
-            <h6 class="copyright-text">tvastra 2020</h6>
-          </div>
+        <div class="doctor-figure-container">
+          <figure class="doctor-figure">
+            <img
+              src="../assets/images/about-us/femaleDoctor.png"
+              alt="doctor image"
+            />
+          </figure>
         </div>
-      </footer>
-</body>
+      </section>
+      <div id="checkup-main-container">
+        <div id="vid-container">
+          <video autoplay muted loop id="vid">
+            <source
+              src="../assets/images/video/The New Stamford Hospital TV Commercial.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <section class="checkup-section">
+          <div class="checkup-description-container">
+            <h2 class="checkup-description-title">
+              Your wellness builds upon the medical daily.
+            </h2>
+            <p class="checkup-description-text">
+              Find your best self here. Discover new ways to live an inspiring
+              life through natural beauty. nutrition and diet. an acive
+              lifestyle. and better relationships.
+            </p>
+          </div>
+          <div class="checkup-btn-container">
+            <button class="light-btn" id="checkup-btn">
+              Get a Free Checkup
+            </button>
+          </div>
+          <div class="ratings-container">
+            <ul class="rating-category">
+              <li class="rating-category-score">12M</li>
+              <li class="rating-category-description">Happy Patients</li>
+            </ul>
+            <ul class="rating-category center-rating-container">
+              <li class="rating-category-score">5K</li>
+              <li class="rating-category-description">Medical Assistants</li>
+            </ul>
+            <ul class="rating-category">
+              <li class="rating-category-score">9.8</li>
+              <li class="rating-category-description">Alexa Score</li>
+            </ul>
+            <ul class="rating-category">
+              <li class="rating-category-score">3.2K</li>
+              <li class="rating-category-description">Doctors Available</li>
+            </ul>
+            <ul class="rating-category center-rating-container">
+              <li class="rating-category-score">45K</li>
+              <li class="rating-category-description">Cure Rate</li>
+            </ul>
+            <ul class="rating-category">
+              <li class="rating-category-score">75</li>
+              <li class="rating-category-description">Health Points</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="container career-enquiry-container">
+        <div class="container__text">
+          <h2 class="container-title" id="career-enquiry-title">
+            Join Our Team
+          </h2>
+          <p class="container-subtitle" id="career-enquiry-subtitle">
+            We are always looking for good and talented people
+          </p>
+        </div>
+        <button class="light-btn submit-enquiry-btn" id="career-enquiry-btn">
+          Submit your CV
+        </button>
+      </section>
+    </main>
+    <footer class="footer" id="aboutus-footer">
+      <div class="footer-tabview">
+        <figure class="footer-logo">
+          <img src="../assets/images/logoFooter.png" alt="" />
+        </figure>
+        <ul id="aboutus-footer-list">
+          <a href="./doctor.html" class="nav-links"><li>Doctor</li></a>
+          <a href="./hospital.html" class="nav-links"><li>Hospital</li></a>
+          <a href="./treatment.html" class="nav-links"><li>Treatment</li></a>
+          <a href="./submityourquery.html" class="nav-links"
+            ><li>Other Services</li></a
+          >
+          <a href="./faq.html" class="nav-links"><li>FAQs</li></a>
+        </ul>
+      </div>
+      <div class="footer-tabview copyright-footer" id="aboutus-footer-desktop">
+        <div class="follow-us" id="aboutus-follow-us">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright" id="aboutus-copyright">
+          <h6 class="copyright-text">All Rights Reserved.</h6>
+          <i class="far fa-copyright copyright-icon"></i>
+          <h6 class="copyright-text">tvastra 2020</h6>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

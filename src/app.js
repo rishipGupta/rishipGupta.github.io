@@ -94,5 +94,4 @@ function moreServicesCarousel(carouselIndex){
     document.getElementById('more-services-carousel-2').setAttribute('class','hide-treatment-figure-container');
 
     document.getElementById(carouselIndex).setAttribute('class','treatment-figure-container');
-
 }
