@@ -459,7 +459,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 .hide-tests-container{
@@ -475,10 +475,10 @@
   height: 12rem;
   width: 48%;
   box-shadow: 3px -1px 9px 4px rgba(0, 0, 0, 0.05);
-  /* margin:0.3rem; */
+  margin:0.2rem;
 }
 
- #vitamin-profile-container {
+ /* #vitamin-profile-container {
   margin-right: 0.65rem;
 }
 
@@ -488,7 +488,7 @@
 
 #liver-profile-container {
   margin-top: 0.65rem;
-} 
+}  */
 .test-figure {
   height: 3rem;
   margin: 1.25rem;

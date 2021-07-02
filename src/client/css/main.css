@@ -464,17 +464,18 @@ figcaption {
     align-self: flex-end;
     position: absolute;
     top: 0%;
-    right: 7%;
-    width: 45%;
+    right: 0%;
+    width: 50%;
+    bottom: 0;
   }
 
   .service-image {
-    width: 80%;
+    width: 90%;
     margin-bottom: 0;
   }
 
   .service-image img {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .doctors-block {
@@ -672,12 +673,12 @@ figcaption {
   }
   .service-imageBlock {
     top: 0%;
-    right: 3%;
-    width: 50%;
+    right: 0%;
+    width: 60%;
   }
 
   .service-image {
-    width: 75%;
+    width: 80%;
     margin-bottom: 0;
   }
 
